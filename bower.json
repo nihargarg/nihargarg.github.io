@@ -1,0 +1,26 @@
+{
+  "name": "how-to-webdev",
+  "version": "0.0.0",
+  "homepage": "https://github.com/BoilerCamp/how-to-webdev",
+  "description": "",
+  "main": "Nihar blog",
+  "moduleType": [],
+  "keywords": [
+    "nihar"
+  ],
+  "authors": [
+    "Nihar"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.4.0"
+  }
+}

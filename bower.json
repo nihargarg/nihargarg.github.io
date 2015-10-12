@@ -1,15 +1,8 @@
 {
   "name": "how-to-webdev",
-  "version": "0.0.0",
-  "homepage": "https://github.com/BoilerCamp/how-to-webdev",
-  "description": "",
-  "main": "Nihar blog",
-  "moduleType": [],
-  "keywords": [
-    "nihar"
-  ],
+  "version": "1.0.0",
   "authors": [
-    "Nihar"
+    "Nihar Garg <nihar@garg.xyz>"
   ],
   "license": "MIT",
   "ignore": [

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang='en'>
+	
   <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    
+    <!-- Mobile Specific -->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <title>Nihar Garg.</title>
@@ -12,7 +15,10 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='Style.css'>
     
+    <!-- Favicons -->
     <link rel="shortcut icon" href="favicon.png" >
+    
+    <!-- Script -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   
@@ -29,18 +35,18 @@
                 <span class='icon-bar'></span>
                 <span class='icon-bar'></span>
               </button>
+              
               <a class='navbar-brand' href='#'>
-                <i class='fa fa-thumbs-up'></i>
-                Nihar Garg
+                <i class='fa fa-thumbs-up'></i> Nihar Garg
               </a>
             </div>
         
             <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
               <ul class='nav navbar-nav navbar-right'>
                 <li><a href='/'>Home</a></li>
-                <li><a id='nav-about' href='#about-section'>About</a></li>
-                  <li><a id='nav-writing' href='#writing-section'>Projects</a></li>
-                <li><a id='nav-contact' href='#contact-section'>Contact</a></li>
+                <li><a class="smoothscroll" id='nav-about' href='#about-section'>About</a></li>
+                  <li><a class="smoothscroll" id='nav-writing' href='#writing-section'>Projects</a></li>
+                <li><a class="smoothscroll" id='nav-contact' href='#contact-section'>Contact</a></li>
               </ul>
             </div>
           </div>
@@ -50,6 +56,10 @@
         <h1 class='header-title'>Hi, I'm Nihar Garg.</h1>
         <h2 class='header-subtitle'>Mechanical Engineer. Problem Solver. Tech Enthusiast.</h2>
       </div>
+      
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
     </header>
     
     <main>
@@ -71,7 +81,7 @@
                 I am currently teaching myself how to make an andoroid app and how to be a more sustainable engineer.
               </p>
               <p class='section-content'>
-		<i class='fa fa-linkedin-square'></i> <a href='http://linkedin.com/in/nihargarg/'> LinkedIn </a> | <i class='fa fa-download'></i> <a href='https://www.dropbox.com/s/5zk6sl5yjqf4kv2/Nihar%20Garg%20Resume.pdf?dl=0'> Resume </a> | <i class='fa fa-at'></i> <a href=mailto:nihar@garg.xyz> Email </a> | <i class='fa fa-github'></i> <a href='http://github.com/nihargarg'> Github </a>
+		 <i class='fa fa-linkedin'></i> <a href='http://linkedin.com/in/nihargarg/'> LinkedIn </a>  |  <i class='fa fa-download'></i> <a href='https://www.dropbox.com/s/5zk6sl5yjqf4kv2/Nihar%20Garg%20Resume.pdf?dl=0'> Resume </a>  |  <i class='fa fa-at'></i> <a href=mailto:nihar@garg.xyz> Email </a>  |  <i class='fa fa-github'></i> <a href='http://github.com/nihargarg'> Github </a>
 	      </p>
             </div>
           </div>
@@ -101,9 +111,9 @@
             <div class='post-preview'>
               <h3 class='post-preview-title'>Leadership & Team Building <i class="fa fa-user-plus"></i></h3>
               <p>
-              	Favorite technologies - The Internet of Things, Google Now, Apple Pay and everything about the Tesla Model X
-              	Favorite products - Huawei Watch, Microsoft HoloLens, DJI Phantom 3 and a few others
-              	People who influence me - Elon Musk, Narendra Modi, Bill Gates, Satya Nadella and many others
+              	Favorite technologies - The Internet of Things, Google Now, Apple Pay and everything about the Tesla Model X <br />
+              	Favorite products - Huawei Watch, Microsoft HoloLens, DJI Phantom 3 and a few others <br />
+              	People who influence me - Elon Musk, Narendra Modi, Bill Gates, Satya Nadella and many others <br />
               </p>
               <a href='leadership.html'>Read more &raquo;</a>
             </div>
@@ -125,9 +135,11 @@
               </div>
               <input type='text' class='form-control contact-input' name='subject' placeholder='Subject *'>
               <textarea class='form-control contact-input message' name='message' placeholder='Your Message *'></textarea>
-              <input class='btn btn-default contact-submit' type='submit' value='Submit'>
               
+              <!-- Google reCAPTCHA -->
               <div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_"></div>
+              
+              <input class='btn btn-default contact-submit' type='submit' value='Submit'>
             </form>
           </div>
         </div>
@@ -137,7 +149,7 @@
     
     <footer>
     	<ul class="copyright">
-               <p>&copy; Nihar Garg | 2015</p>   
+               <p>Nihar Garg | 2015</p>   
         </ul>
     </footer>
     

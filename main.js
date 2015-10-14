@@ -57,7 +57,7 @@ function handleContactSubmission() {
     var subject = $('input[name=subject]').val();
     var message = $('textarea[name=message]').val();
 
-    var url = 'mailto:iamnihargarg@outlook.com?&subject=' + first + ' ' + last + ': ' + subject + '&body=' + message;
+    var url = 'mailto:nihar@purdue.edu?&subject=' + first + ' ' + last + ': ' + subject + '&body=' + message;
 
     var win = window.open(url, '_blank');
     win.focus();

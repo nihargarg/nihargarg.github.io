@@ -40,3 +40,26 @@ function clickAndScroll(link, section) {
     return false;
   });
 }
+
+/*
+ * handleContactSubmission lets us open the user's default mail client with a
+ * new email to ourselves with the information entered into the form. First we
+ * register a submit listener on the contact form, then we prevent the default
+ * action from occurring (refreshing the page). From there we can pull out the
+ * information in the form. With this information we can create a url that will
+ * redirect the user (in a new tab) to their mail client with the form info.
+ */
+function handleContactSubmission() {
+  $('form').submit(function(e) {
+    e.preventDefault();
+    var first = $('input[name=first]').val();
+    var last = $('input[name=last]').val();
+    var subject = $('input[name=subject]').val();
+    var message = $('textarea[name=message]').val();
+
+    var url = 'mailto:iamnihargarg@outlook.com?&subject=' + first + ' ' + last + ': ' + subject + '&body=' + message;
+
+    var win = window.open(url, '_blank');
+    win.focus();
+  });
+}

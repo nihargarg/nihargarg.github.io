@@ -7,7 +7,7 @@
  */
 
 function enableContact() {
-  $('contact-button').attr("disabled", "false");
+  $('#contact-button').attr("disabled", "false");
 }
 
 $(function() {

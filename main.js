@@ -5,6 +5,11 @@
  * specifically the DOM) to load, and our functions that we call inside it
  * (registerNavButtons and handleContactSubmission) interact with the DOM.
  */
+
+function enableContact() {
+  $('contact-button').attr("disabled", "false");
+}
+
 $(function() {
   registerNavButtons();
   handleContactSubmission();

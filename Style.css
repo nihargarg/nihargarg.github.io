@@ -117,7 +117,10 @@ section {
 
 #about-section {
   min-height: 400px;
-  background-color: #339DCA;
+  background-image: url(nihar_background2.jpg);
+  background-position: center center;
+  background-size: cover;
+  /*background-color: #339DCA;*/
 }
 
 .about-wrapper {

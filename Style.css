@@ -155,13 +155,15 @@ section {
   background-image: url(nihar_background3.jpg);
   background-position: center center;
   background-size: cover;
-  filter: grayscale(0.4);
+  filter: grayscale(.5);
+  filter: opacity(.2);
 }
 
 #contact-section {
   background-image: url(nihar_background4.jpg);
   background-position: center center;
   background-size: cover;
+  filter: opacity(.2);
 }
 
 .contact-input {

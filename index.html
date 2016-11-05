@@ -15,8 +15,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='Style.css'>
-    
-    <!-- Favicons -->
     <link rel="shortcut icon" href="/favicon.png">
   </head>
 
@@ -53,7 +51,18 @@
       <div class='header-text'>
         <h1 class='header-title'>Hi, I'm Nihar Garg</h1>
         <h2 class='header-subtitle'>Mechanical Engineer. Problem Solver. Tech Enthusiast.</h2>
+        <h3 class="hello" onmouseenter="helloEnter(this)"
+        onmouseleave="helloLeave(this)">Be Happy!</h1>
       </div>
+
+      <script>
+      function helloEnter(x) {
+        x.textContent = "Have a great day!!"
+      }
+      function helloLeave(x) {
+        x.textContent = "Be Happy!"
+      }
+      </script>
       
       <!--
       <p class="scrolldown">
@@ -74,18 +83,17 @@
             </div>
             <div class='col-xs-12 col-sm-9'>
               <p class='section-content'>
-               I am a student at Purdue University pursuing a Bachelor of Science degree in Mechanical Engineering. I am currently seeking a full-time position to be part of a team that challenges me to further my engineering and leadership skills. 
+               I am a Purdue University graduate with a Bachelor of Science degree in Mechanical Engineering and an Engineer-in-Training License certified by the State of Indiana. I am always seeking new opportunities to be part of a team that challenges me to further my engineering and leadership skills. 
               </p>
               <p class='section-content'>
                 I hope to align my project management skills, passion for technology and positive attitude to solve real-world problems and inspire people from diverse backgrounds. I am an engineering leader who is excited to apply his strong work ethic and proven team building potential to make a genuine impact.
               </p>
               <p class='section-content'>
-		 <i class='fa fa-linkedin'></i> <a href="http://linkedin.com/in/nihargarg/" target="_blank"> LinkedIn </a>  |  <i class='fa fa-download'></i> <a href="/Nihar Garg Resume.pdf" target="_blank"> Resume </a>  |  <i class='fa fa-at'></i> <a href=mailto:nihar@purdue.edu> Email </a>  |  <i class='fa fa-phone'></i> (765) 637-6500 </a>
+		 <i class='fa fa-linkedin'></i> <a href="http://linkedin.com/in/nihargarg/" target="_blank"> LinkedIn </a>  |  <i class='fa fa-download'></i> <a href="/Nihar Garg Resume.pdf" target="_blank"> Resume </a>  |  <i class='fa fa-at'></i> <a href=mailto:nihar@purdue.edu> Email </a>  |  <i class='fa fa-phone'></i> (765) 637-6500 </a> | <i class='fa fa-github'></i> <a href="https://github.com/nihargarg" target="_blank"> Github </a> | <i class='fa fa-trophy'></i> <a href="https://devpost.com/nihargarg" target="_blank"> Devpost </a>
 	      </p>
 	      <!--
-	      |  <i class='fa fa-github'></i> <a href="http://github.com/nihargarg" target="_blank"> Github </a>
-              <a href="projects.html" target="_blank">Read more &raquo;</a>
-              -->
+          <a href="projects.html" target="_blank">Read more &raquo;</a>
+        -->
             </div>
           </div>
         </div>
@@ -99,14 +107,14 @@
               <h3 class='post-preview-title'>Internships <i class="fa fa-cog fa-spin"></i></h3>
               <p>
                 I have had three internships over my past three summers at Purdue University. One of my most memorable internships was during the summer of 2015, where I worked at Kaiser Aluminum in Kalamazoo, MI as an Intern Project Engineer. I was working with the Project Management team to solve problems around the plant and successfully completed 5 projects from start to finish. I designed and tested solutions which maximized ergonomics and reduced downtime. Check out my resume for more details on this internship and the other industry experiences I've had!
-              <br /> <i class='fa fa-download'></i> <a href="/Nihar Garg Resume.pdf" target="_blank">  Resume </a>
+              <br /> <i class='fa fa-download'></i> <a href="/Nihar Garg Resume.pdf" target="_blank">  Resume </a>  |  <i class='fa fa-linkedin'></i> <a href="http://linkedin.com/in/nihargarg/" target="_blank">  LinkedIn </a>
               </p>
             </div>
             <div class='post-preview'>
               <h3 class='post-preview-title'>Smart Bin Remover <i class="fa fa-trash"></i></h3>
               <p>
-                Throughout my time in college, I have been a part of many teams and worked on multiple projects. In my Senior Engineering Design class, I worked on an automated robot that can attach to the three most common types of waste bins and deliver the attached bin to the desired pick up location on trash day. I headed the programming of the robot using an Arduino microcontroller and led the team through the electrical design for the product. Check out my LinkedIn profile for more details on this project and the other projects I've worked on in college!
-              <br /> <i class='fa fa-linkedin'></i> <a href="http://linkedin.com/in/nihargarg/" target="_blank">  LinkedIn </a>
+                Throughout my time in college, I have been a part of many teams and worked on multiple projects. In my Senior Engineering Design class, my team and I designed an innovative, fully autonomous robot that can attach to the three most common types of waste bins and deliver the attached bin to the desired pick up location on trash day. I headed the programming of the robot using an Arduino microcontroller and led the integration and testing of "smart" technologies to remove all user interaction. The Smart Bin Remover project placed top 7 at the Mechanical Engineering Innovation Competition at Purdue University.
+              <br /> <i class="fa fa-youtube-play" aria-hidden="true"></i> <a href="https://youtu.be/HWuUaoVsQfk" target="_blank">  Testing Video </a>
               </p>
             </div>
             <div class='post-preview'>
@@ -159,6 +167,7 @@
                 <br />
                 <input id="contact-button" class='btn btn-default contact-submit' type='submit' value='Submit' disabled="true">
               </form>
+              <br />
             </div>
             <div class="col-xs-12 col-sm-6">   
                 <a class="twitter-timeline" href="https://twitter.com/iamnihargarg" data-widget-id="716286035282501632">Tweets by @iamnihargarg</a>
@@ -172,8 +181,8 @@
     <footer>
     	<ul class="copyright">
                <p>
-               Created by Nihar Garg on 10/10/15.<br />
-               Last updated on 04/02/16.
+               Made with <i class='fa fa-heart'></i> by Nihar Garg on 10/10/15.<br />
+               Last updated on 11/05/16.
                </p>   
         </ul>
     </footer>

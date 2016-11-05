@@ -117,10 +117,11 @@ section {
 
 #about-section {
   min-height: 400px;
+
   background-image: url(nihar_background2.jpg);
   background-position: center center;
   background-size: cover;
-  /*background-color: #339DCA;*/
+  filter: grayscale(0.3);
 }
 
 .about-wrapper {
@@ -152,11 +153,17 @@ section {
 #writing-section {
   min-height: 400px;
 
-  background-color: #5D576B;
+  background-image: url(nihar_background3.jpg);
+  background-position: center center;
+  background-size: cover;
+  filter: grayscale(0.4);
 }
 
 #contact-section {
-  background-color: #FE938C;
+  background-image: url(nihar_background4.jpg);
+  background-position: center center;
+  background-size: cover;
+  filter: grayscale(0.4);
 }
 
 .contact-input {

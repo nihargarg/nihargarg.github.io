@@ -121,7 +121,7 @@ section {
   background-image: url(nihar_background2.jpg);
   background-position: center center;
   background-size: cover;
-  filter: grayscale(0.7);
+  filter: grayscale(0.5);
 }
 
 .about-wrapper {
@@ -156,7 +156,7 @@ section {
   background-image: url(nihar_background3.jpg);
   background-position: center center;
   background-size: cover;
-  filter: grayscale(0.7);
+  filter: grayscale(0.9);
 }
 
 #contact-section {

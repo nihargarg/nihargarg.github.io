@@ -116,8 +116,8 @@ section {
 }
 
 #about-section {
-  height: 100vh;
-  color: #107896;
+  min-height: 400px;
+  color: black;
 
   background-image: url(nihar_background2.jpg);
   background-position: center center;

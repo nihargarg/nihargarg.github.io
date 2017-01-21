@@ -19,9 +19,9 @@
 	<script>
  		$(function(){
    			$(".scrollText").typed({
-     		strings: ["Mechanical Engineer.", "Problem Solver", "Tech Enthusiast."],
+     		strings: ["Mechanical Engineer.", "Problem Solver.", "Tech Enthusiast."],
    		    loop: true,
-        	typeSpeed: 2
+        	typeSpeed: 0
       		});
   		});
 	</script>
@@ -58,9 +58,11 @@
         </nav>
     
       <div class='header-text'>
-        <h1 class='header-title' onmouseenter="helloEnter(this)" onmouseleave="helloLeave(this)">My name is Garg</h1>
-        <!-- <h2 class='header-subtitle'>cool kid</h2> -->
-   		<center><h2 class="scrollText">I'm a </h2></center>
+        <!--HOVER TEXT--><h1 class='header-title text-left' onmouseenter="helloEnter(this)" onmouseleave="helloLeave(this)">My name is Garg</h1>
+   		<!--SCROLL TEXT-->
+   			<div class="col-md-12 text-left">
+   				<h2 class='header-subtitle'>I'm a <span class="scrollText" data-period="2000"></span></h2>
+   			</div>
       </div>
 
       <script>

@@ -19,7 +19,7 @@
 	<script>
  		$(function(){
    			$(".scrollText").typed({
-     		strings: ["Mechanical Engineer.", "Problem Solver.", "Tech Enthusiast."],
+     		strings: ["Mechanical Engineer...", "Problem Solver...", "Tech Enthusiast..."],
    		    loop: true,
         	typeSpeed: 0
       		});
@@ -59,14 +59,12 @@
     
       <div class='header-text'>
         <!--HOVER TEXT--> <h1 class='header-title' onmouseenter="helloEnter(this)" onmouseleave="helloLeave(this)">My name is Garg</h1>
-		</div>
-        <div class='header-text1'>
-   		<!--SCROLL TEXT--> <h2 class='header-subtitle' text-align: left>I'm a <span class="scrollText"></span></h2>
+   		<!--SCROLL TEXT--> <h2 class='header-subtitle text-left'>I'm a <span class="scrollText"></span></h2>
       </div>
 
       <script>
       function helloEnter(x) {
-        x.textContent = "My name is Nihar Garg"
+        x.textContent = "Nihar Garg"
       }
       function helloLeave(x) {
         x.textContent = "My name is Garg"

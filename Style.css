@@ -120,6 +120,8 @@ section {
 }
 
 #about-section {
+  min-height: 400px;
+
   background-image: url(nihar_background2.jpg);
   background-position: center center;
   background-size: cover;
@@ -265,6 +267,10 @@ footer .fa-heart {
 
 .blog-body p {
   margin-bottom: 20px;
+}
+
+#footer-section {
+  background-color: #5D576B;
 }
 
 

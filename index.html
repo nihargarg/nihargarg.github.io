@@ -6,15 +6,19 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <!-- Mobile Specific --> <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title>Nihar Garg.</title>
+    <title>Nihar Garg</title>
     
-    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css'>
+    <!-- <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css'> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+
     <link rel='stylesheet' href='Style.css'>
     <link rel="shortcut icon" href="/favicon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="typed.min.js"></script>
 	<script>
  		$(function(){
@@ -31,7 +35,7 @@
     <header class='main-header'>
       <div class='black'></div>
     
-        <nav class='navbar navbar-default' data-spy="affix">
+        <nav class='navbar navbar-default'>
           <div class='container'>
             <div class='navbar-header'>              
               <a class='navbar-brand' href='#'>
@@ -80,11 +84,13 @@
               <p class='section-content' align="justify">
                 I hope to align my project management skills, passion for technology and positive attitude to solve real-world problems and inspire people from diverse backgrounds. I am an engineering leader who is excited to apply his strong work ethic and proven team building potential to make a genuine impact.
               </p>
-              <p class='section-content'>
-		        <i class='fa fa-linkedin'></i> <a href="http://linkedin.com/in/nihargarg/" target="_blank"> LinkedIn</a> &nbsp&nbsp|&nbsp&nbsp <i class='fa fa-download'></i> <a href="/Garg Resume.pdf" target="_blank" type="button" class="btn btn-primary"> Resume</a> &nbsp&nbsp|&nbsp&nbsp <i class='fa fa-at'></i> <a href=mailto:nihar@purdue.edu> Email</a>
-                <br />
-                <i class='fa fa-github'></i> <a href="https://github.com/nihargarg" target="_blank"> Github</a> &nbsp&nbsp|&nbsp&nbsp <i class='fa fa-trophy'></i> <a href="https://devpost.com/nihargarg" target="_blank"> Devpost</a> &nbsp&nbsp|&nbsp&nbsp <i class='fa fa-youtube-play'></i> <a href="https://www.youtube.com/c/NiharGarg" target="_blank"> YouTube</a>
-	            </p>
+		        <!-- Buttons -->
+		        <br />
+            	<div class="btn-group btn-group-justified">
+					<a href="http://linkedin.com/in/nihargarg/" target="_blank" class="btn btn-primary"><i class='fa fa-linkedin'></i> LinkedIn</a>
+ 					<a href="/Garg Resume.pdf" target="_blank" class="btn btn-primary"><i class='fa fa-download'></i> Resume</a>
+ 					<a href=#contact-section class="btn btn-primary"><i class='fa fa-at'></i> Email</a>
+				</div>
             </div>
           </div>
         </div>
@@ -99,14 +105,14 @@
               <p align="justify">
                 During my time at Purdue, I had worked on countless projects in class and out of class, such as at hackathons. A lot of my projects involved developing a product that could actually solve a real-world problem. I have worked with different teams with people of different backgrounds, and were fortunate enough to be able to get feedback and constructive criticism to better our products. It was important to me to pursue my passion of working with the latest technologies, so even after graduating from Purdue, I have been going to hackathons and learning something new everyday!
               </p>
-              <a href="projects.html" target="_blank">Check out the products I've developed &raquo;</a>
+              <a href="projects.html" target="_blank" data-toggle="tooltip" title="Click Me!">Check out the products I've developed &raquo;</a>
             </div>
             <div class='post-preview'>
               <h3 class='post-preview-title'>Work Experience <i class="fa fa-cog fa-spin"></i></h3>
               <p align="justify">
                 As an engineering student, it was important that I got some real world experience in addition to all my coursework. To do this, I made sure to spend my summers interning for the companies not only in the US, but also internationally. I tried to get real-life experiences in as many engineering fields as possible, so I could have a better idea of what I wanted to pursue as a career. In the below link, I have talked about my most recent internship as this was the most relevant to what I want to do, and also talked about how I am currently problem solving as a software engineer!
               </p>
-              <a href="work.html" target="_blank">Check out my work experiences &raquo;</a>
+              <a href="work.html" target="_blank"  data-toggle="tooltip" title="Click Me!">Check out my work experiences &raquo;</a>
             </div>
           </div>
         </div>
@@ -131,6 +137,7 @@
                 	<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact"> </div>
                	<br />
                 <input class='btn btn-default contact-submit' type='submit' value='Submit' disabled="true" onClick="disabled=true; value='Sending…';">
+                <br /><br /><br />
               </form>
             </div>
             <!-- Twitter API -->
@@ -138,15 +145,22 @@
                 <a class="twitter-timeline" href="https://twitter.com/iamnihargarg" data-widget-id="716286035282501632">Tweets by @iamnihargarg</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
+            <!-- Buttons -->
+            <div class="btn-group btn-group-justified">
+				<a href="https://github.com/nihargarg" target="_blank" class="btn btn-primary"><i class='fa fa-github'></i> Github</a>
+ 				<a href="https://devpost.com/nihargarg" target="_blank" class="btn btn-primary"><i class='fa fa-trophy'></i> Devpost</a>
+ 				<a href="https://www.youtube.com/c/NiharGarg" target="_blank" class="btn btn-primary"><i class='fa fa-youtube-play'></i> YouTube</a>
+			</div>
+			<br /><br />
             <!-- Google Maps API -->
-            <p><div>
+            <div>
               <iframe width="100%"
                 height="100% "
                 min-height="600px"
                 frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJG8KTfbLiEogRp9LyOjaK8Ek&key=AIzaSyBe8P7ECcCCM1oPPCKNHhYCCTiCgtPE--o" allowfullscreen>
               </iframe>
-            </div></p>
+            </div>
         </div>
       </section>
 
@@ -161,7 +175,6 @@
         </ul>
     </footer>
     
-    <script src='/bootstrap/dist/js/bootstrap.min.js'></script>
     <script src='main.js'></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     

@@ -7,8 +7,7 @@
     <!-- Mobile Specific --> <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <title>Nihar Garg</title>
-    
-    <!-- <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css'> -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -31,21 +30,22 @@
 	</script>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header class='main-header'>
       <div class='black'></div>
     
-        <nav class='navbar navbar-default'>
-          <div class='container'>
+        <nav class='navbar navbar-inverse navbar-fixed-top'>
+          <div class='container-fluid'>
             <div class='navbar-header'>              
-              <a class='navbar-brand' href='#'>
-                <i class='fa fa-thumbs-up'></i> Nihar Garg
-              </a>
+              <a class='navbar-brand' href='#'><i class='fa fa-thumbs-up'></i> Nihar Garg</a>
             </div>
-        
+        	<!-- <ul class="nav navbar-nav">
+      			<li class="active"><a href="#">Home</a></li>
+      			<li><a href="#">Page 1</a></li>
+    		</ul> -->
             <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
               <ul class='nav navbar-nav navbar-right'>
-                <li><a href='/'>Home</a></li>
+                <li class="active"><a class="smoothscroll" href='#'>Home</a></li>
                 <li><a class="smoothscroll" id='nav-about' href='#about-section'>About</a></li>
                 <li><a class="smoothscroll" id='nav-writing' href='#writing-section'>Projects</a></li>
                 <li><a class="smoothscroll" id='nav-contact' href='#contact-section'>Contact</a></li>
@@ -86,10 +86,10 @@
               </p>
 		        <!-- Buttons -->
 		        <br />
-            	<div class="btn-group btn-group-justified">
+            	<div class="btn-group btn-group-justified btn-group-lg">
 					<a href="http://linkedin.com/in/nihargarg/" target="_blank" class="btn btn-primary"><i class='fa fa-linkedin'></i> LinkedIn</a>
  					<a href="/Garg Resume.pdf" target="_blank" class="btn btn-primary"><i class='fa fa-download'></i> Resume</a>
- 					<a href=#contact-section class="btn btn-primary"><i class='fa fa-at'></i> Email</a>
+ 					<a class="smoothscroll btn btn-primary" href='#contact-section'><i class='fa fa-at'></i> Email</a>
 				</div>
             </div>
           </div>
@@ -137,16 +137,17 @@
                 	<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact"> </div>
                	<br />
                 <input class='btn btn-default contact-submit' type='submit' value='Submit' disabled="true" onClick="disabled=true; value='Sending…';">
-                <br /><br /><br />
               </form>
+              <br /><br />
             </div>
             <!-- Twitter API -->
             <div class="col-xs-12 col-sm-6">
                 <a class="twitter-timeline" href="https://twitter.com/iamnihargarg" data-widget-id="716286035282501632">Tweets by @iamnihargarg</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <br /><br /><br />
             </div>
             <!-- Buttons -->
-            <div class="btn-group btn-group-justified">
+            <div class="btn-group btn-group-justified btn-group-lg">
 				<a href="https://github.com/nihargarg" target="_blank" class="btn btn-primary"><i class='fa fa-github'></i> Github</a>
  				<a href="https://devpost.com/nihargarg" target="_blank" class="btn btn-primary"><i class='fa fa-trophy'></i> Devpost</a>
  				<a href="https://www.youtube.com/c/NiharGarg" target="_blank" class="btn btn-primary"><i class='fa fa-youtube-play'></i> YouTube</a>
@@ -163,15 +164,14 @@
             </div>
         </div>
       </section>
-
     </main>
     
-    <footer class='main-footer'>
+    <footer>
     	<ul class="copyright">
-               <p>
-               Made with <i class='fa fa-heart'></i> by Nihar Garg on 10/10/15.<br />
-               Last updated on 01/22/17.
-               </p>   
+          <p>
+            Made with <i class='fa fa-heart'></i> by Nihar Garg on 10/10/15.<br />
+            Last updated on 01/22/17.
+          </p>
         </ul>
     </footer>
     

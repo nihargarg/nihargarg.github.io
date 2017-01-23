@@ -10,14 +10,19 @@
   margin-bottom: 0;
   border: none;
 
-  background-color: black;
+  background-color: #7E8F7C;
+  opacity: .9;
 }
 
 .navbar a {
   color: white !important;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
+.navbar:hover {
+  opacity: 1.0;
+}
+
+.navbar-inverse .navbar-fixed-top .navbar-toggle .icon-bar {
   background-color: white;
 }
 
@@ -161,12 +166,14 @@ section {
   background-image: url(nihar_background3.jpg);
   background-position: center center;
   background-size: cover;
+  opacity: .9;
 }
 
 #contact-section {
   background-image: url(nihar_background4.jpg);
   background-position: center center;
   background-size: cover;
+  opacity: .9;
 }
 
 .contact-input {
@@ -270,11 +277,6 @@ footer .fa-heart {
 .blog-body p {
   margin-bottom: 20px;
 }
-
-.main-footer {
-  background-color: #D7BDE2;
-}
-
 
 .typed-cursor{
     opacity: 1;

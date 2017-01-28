@@ -16,63 +16,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
 
-    <link rel='stylesheet' href='Style.css'>
-    <link rel="shortcut icon" href="/favicon.png">
-    <script src="typed.min.js"></script>
-	<script>
- 		$(function(){
-   			$(".scrollText").typed({
-     		strings: ["Mechanical Engineer...", "Problem Solver...", "Tech Enthusiast..."],
-   		    loop: true,
-        	typeSpeed: 0
-      		});
-  		});
-	</script>
-
-	<!-- <script>
-		$(document).ready(function(){
-  		  // Add smooth scrolling to all links
-  		  $("a").on('click', function(event) {
-
-	    	// Make sure this.hash has a value before overriding default behavior
-    		if (this.hash !== "") {
-    		  // Prevent default anchor click behavior
-      		  event.preventDefault();
-
-      		  // Store hash
-      		  var hash = this.hash;
-
-	      	  // Using jQuery's animate() method to add smooth page scroll
-    	  	  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      		  $('html, body').animate({
-        		scrollTop: $(hash).offset().top
-			  }, 800, function(){
-   
-        	  // Add hash (#) to URL when done scrolling (default click behavior)
-        	  window.location.hash = hash;
-      		  });
-    	    } // End if
-  		  });
-	  	});
-	</script> -->
+    <link rel='stylesheet' href='assets/css/style.css'>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <script src="assets/js/typed.min.js"></script>
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header class='main-header'>
       <div class='black'></div>
-    
         <nav class='navbar navbar-inverse navbar-fixed-top'>
           <div class='container-fluid'>
             <div class='navbar-header'>              
               <a class='navbar-brand' href='#'><i class='fa fa-thumbs-up'></i> Nihar Garg</a>
             </div>
-        	<!-- <ul class="nav navbar-nav">
-      			<li class="active"><a href="#">Home</a></li>
-      			<li><a href="#">Page 1</a></li>
-    		</ul> -->
             <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
               <ul class='nav navbar-nav navbar-right'>
-                <li class="active"><a class="smoothscroll" href='#'>Home</a></li>
+                <li class="active"><a class="smoothscroll" id='nav-home' href='#'>Home</a></li>
                 <li><a class="smoothscroll" id='nav-about' href='#about-section'>About</a></li>
                 <li><a class="smoothscroll" id='nav-writing' href='#writing-section'>Projects</a></li>
                 <li><a class="smoothscroll" id='nav-contact' href='#contact-section'>Contact</a></li>
@@ -83,17 +42,29 @@
     
       <div class='header-text'>
         <!--HOVER TEXT--> <h1 class='header-title' onmouseenter="helloEnter(this)" onmouseleave="helloLeave(this)">My name is Garg,</h1>
-   		<!--SCROLL TEXT--> <h2 class='header-subtitle text-left'>I'm a <span class="scrollText"></span></h2>
+   	  	<!--SCROLL TEXT--> <h2 class='header-subtitle text-left'>I'm a <span class="scrollText"></span></h2>
       </div>
 
-      <script>
-      function helloEnter(x) {
-        x.textContent = "Nihar Garg."
-      }
-      function helloLeave(x) {
-        x.textContent = "My name is Garg,"
-      }
-      </script>
+      	<!--HOVER TEXT-->
+    	  <script>
+    	    function helloEnter(x) {
+      	    x.textContent = "Nihar Garg."
+    	    }
+    	    function helloLeave(x) {
+        	  x.textContent = "My name is Garg,"
+          }
+    	  </script>
+
+        <!--SCROLL TEXT-->
+        <script>
+          $(function(){
+            $(".scrollText").typed({
+              strings: ["Mechanical Engineer...", "Problem Solver...", "Tech Enthusiast..."],
+              loop: true,
+              typeSpeed: 0
+            });
+          });
+        </script>
     </header>
     
     <main>
@@ -102,7 +73,7 @@
           <h2 class='section-title'>About Me</h2>
           <div class='row about-wrapper'>
             <div class='col-xs-12 col-sm-3'>
-              <img src='nihar_purdue.jpg' alt='nihar-headshot' class='img-circle headshot' />
+              <img src='assets/img/nihar_purdue.jpg' alt='nihar-headshot' class='img-circle headshot' />
             </div>
             <div class='col-xs-12 col-sm-9'>
               <p class='section-content' align="justify">
@@ -115,7 +86,7 @@
 		        <br />
             	<div class="btn-group btn-group-justified btn-group-lg">
 					<a href="http://linkedin.com/in/nihargarg/" target="_blank" class="btn btn-primary"><i class='fa fa-linkedin'></i> LinkedIn</a>
- 					<a href="/Garg Resume.pdf" target="_blank" class="btn btn-primary"><i class='fa fa-download'></i> Resume</a>
+ 					<a href="assets/links/Garg Resume.pdf" target="_blank" class="btn btn-primary"><i class='fa fa-download'></i> Resume</a>
  					<a class="smoothscroll btn btn-primary" href='#contact-section'><i class='fa fa-at'></i> Email</a>
 				</div>
             </div>
@@ -132,14 +103,14 @@
               <p align="justify">
                 During my time at Purdue, I had worked on countless projects in class and out of class, such as at hackathons. A lot of my projects involved developing a product that could actually solve a real-world problem. I have worked with different teams with people of different backgrounds, and were fortunate enough to be able to get feedback and constructive criticism to better our products. It was important to me to pursue my passion of working with the latest technologies, so even after graduating from Purdue, I have been going to hackathons and learning something new everyday!
               </p>
-              <a href="projects.html" target="_blank" data-toggle="tooltip" title="Click Me!">Check out the products I've developed &raquo;</a>
+              <a href="assets/links/projects.html" target="_blank" data-toggle="tooltip" title="Click Me!">Check out the products I've developed &raquo;</a>
             </div>
             <div class='post-preview'>
               <h3 class='post-preview-title'>Work Experience <i class="fa fa-cog fa-spin"></i></h3>
               <p align="justify">
                 As an engineering student, it was important that I got some real world experience in addition to all my coursework. To do this, I made sure to spend my summers interning for the companies not only in the US, but also internationally. I tried to get real-life experiences in as many engineering fields as possible, so I could have a better idea of what I wanted to pursue as a career. In the below link, I have talked about my most recent internship as this was the most relevant to what I want to do, and also talked about how I am currently problem solving as a software engineer!
               </p>
-              <a href="work.html" target="_blank"  data-toggle="tooltip" title="Click Me!">Check out my work experiences &raquo;</a>
+              <a href="assets/links/work.html" target="_blank"  data-toggle="tooltip" title="Click Me!">Check out my work experiences &raquo;</a>
             </div>
           </div>
         </div>
@@ -160,27 +131,27 @@
                 </div>
                 <input type='text' class='form-control contact-input' name='subject' placeholder='Subject *'>
                 <textarea class='form-control contact-input message' name='message' placeholder='Your Message *'></textarea>
-                <!-- Google reCAPTCHA -->
+                  <!-- Google reCAPTCHA -->
                 	<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact"> </div>
                	<br />
                 <input class='btn btn-default contact-submit' type='submit' value='Submit' disabled="true" onClick="disabled=true; value='Sending…';">
               </form>
               <br /><br />
             </div>
-            <!-- Twitter API -->
+          <!-- Twitter API -->
             <div class="col-xs-12 col-sm-6">
                 <a class="twitter-timeline" href="https://twitter.com/iamnihargarg" data-widget-id="716286035282501632">Tweets by @iamnihargarg</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             <br /><br /><br />
             </div>
-            <!-- Buttons -->
+          <!-- Buttons -->
             <div class="btn-group btn-group-justified btn-group-lg">
 				<a href="https://github.com/nihargarg" target="_blank" class="btn btn-primary"><i class='fa fa-github'></i> Github</a>
  				<a href="https://devpost.com/nihargarg" target="_blank" class="btn btn-primary"><i class='fa fa-trophy'></i> Devpost</a>
  				<a href="https://www.youtube.com/c/NiharGarg" target="_blank" class="btn btn-primary"><i class='fa fa-youtube-play'></i> YouTube</a>
 			</div>
 			<br /><br />
-            <!-- Google Maps API -->
+          <!-- Google Maps API -->
             <div>
               <iframe width="100%"
                 height="100% "
@@ -202,7 +173,7 @@
         </ul>
     </footer>
     
-    <script src='main.js'></script>
+    <script src='assets/js/main.js'></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     
   </body>

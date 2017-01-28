@@ -6,11 +6,14 @@
   color: white;
 }
 
+
+/*Navbar*/
+
 .navbar {
   margin-bottom: 0;
   border: none;
 
-  background-color: #5F9EA0;
+  background-color: #555;
   opacity: .7;
 }
 
@@ -22,14 +25,13 @@
   opacity: 1.0;
 }
 
-.navbar-inverse .navbar-fixed-top .navbar-toggle .icon-bar {
-  background-color: white;
-}
+
+/*Header*/
 
 .main-header {
   height: 100vh;
 
-  background-image: url(nihar_background.jpg);
+  background-image: url(../img/background1.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -57,25 +59,23 @@
 
 .header-title {
   margin-top: 0;
-
   font-size: 5em;  
 }
 
 .header-subtitle {
   font-size: 3.6em;
-
   text-align: left;
+
   position: relative;
   left: 27%;
-  right:0;
   position: absolute;
+  right:0;
 }
 
 @media (max-width: 480px) {
   .header-title {
     font-size: 2em;
   }
-
   .header-subtitle {
     font-size: 1em;
   }
@@ -83,7 +83,6 @@
 
 section {
   padding: 100px 0;
-
   color: #fff;
 }
 
@@ -129,7 +128,7 @@ section {
 #about-section {
   min-height: 400px;
 
-  background-image: url(nihar_background2.jpg);
+  background-image: url(../img/background2.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -163,14 +162,14 @@ section {
 #writing-section {
   min-height: 400px;
   
-  background-image: url(nihar_background3.jpg);
+  background-image: url(../img/background3.jpg);
   background-position: center center;
   background-size: cover;
   opacity: .9;
 }
 
 #contact-section {
-  background-image: url(nihar_background4.jpg);
+  background-image: url(../img/background4.jpg);
   background-position: center center;
   background-size: cover;
   opacity: .9;
@@ -277,6 +276,7 @@ footer .fa-heart {
 .blog-body p {
   margin-bottom: 20px;
 }
+
 
 .typed-cursor{
     opacity: 1;

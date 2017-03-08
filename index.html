@@ -31,14 +31,18 @@
 			<nav class='navbar navbar-inverse navbar-fixed-top'>
 				<div class='container-fluid'>
 					<div class='navbar-header'>
-						<a class='navbar-brand' href='#'><i class='fa fa-thumbs-up'></i> Nihar Garg</a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class='navbar-brand' id='nav-home' href='#'><i class='fa fa-thumbs-up'></i> Nihar Garg</a>
 					</div>
-					<div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+					<div class='collapse navbar-collapse' id="myNavbar">
 						<ul class='nav navbar-nav navbar-right'>
-							<li class="active"><a class="smoothscroll" id='nav-home' href='#'>Home</a></li>
-							<li><a class="smoothscroll" id='nav-about' href='#about-section'>About</a></li>
-							<li><a class="smoothscroll" id='nav-writing' href='#writing-section'>Projects</a></li>
-							<li><a class="smoothscroll" id='nav-contact' href='#contact-section'>Contact</a></li>
+							<li><a id='nav-about' href='#about-section'>About</a></li>
+							<li><a id='nav-writing' href='#writing-section'>Projects</a></li>
+							<li><a id='nav-contact' href='#contact-section'>Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -79,7 +83,7 @@
 				<h2 class='section-title'>Engineering Experience</h2>
 				<div class='section-content'>
 					<div class='post-preview'>
-						<h3 class='post-preview-title'>Projects and Products <i class="material-icons"></i></h3>
+						<h3 class='post-preview-title'>Projects and Products <i class="material-icons">developer_mode</i></h3>
 						<p align="justify">
 							During my time at Purdue, I had worked on countless projects in class and out of class, such as at hackathons. A lot of my projects involved developing a product that could actually solve a real-world problem. I have worked with different teams with people of different backgrounds, and were fortunate enough to be able to get feedback and constructive criticism to better our products. It was important to me to pursue my passion of working with the latest technologies, so even after graduating from Purdue, I have been going to hackathons and learning something new everyday!
 						</p>
@@ -119,7 +123,10 @@
 				<br /><br />
 				
 				<div class="col-xs-12 col-sm-6 text-center">
-					<form method="post" action="assets/php/contact.php">
+					<!-- Contact form using PHP:
+						<form method="post" action="assets/php/contact.php">
+					-->
+					<form action="https://formspree.io/iamnihargarg@outlook.com" method="POST">
 						<div class="row control-group">
 							<div class="form-group col-xs-12 floating-label-form-group controls">
 								<input type="text" class="form-control contact-input" id="name" name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required data-validation-required-message="Please enter your name.">
@@ -128,7 +135,7 @@
 						</div>
 						<div class="row control-group">
 							<div class="form-group col-xs-12 floating-label-form-group controls">
-								<input type="email" class="form-control contact-input" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required data-validation-required-message="Please enter your email address.">
+								<input type="email" class="form-control contact-input" id="email" name="_replyto" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required data-validation-required-message="Please enter your email address.">
 								<p class="help-block text-danger"></p>
 							</div>
 						</div>
@@ -143,10 +150,12 @@
 						<!-- Submit Button -->
 						<div class="row">
 							<div class="form-group">
-								<input class='btn btn-lg btn-outline contact-submit' type='submit' value='Submit' name="contact-button">
-								<!-- disabled="true" onClick="disabled=true; value='Sending…';" -->
+								<input type='submit' class='btn btn-lg btn-outline contact-submit' value='Submit Form' name="contact-button" disabled="true">
+								<!-- onClick="disabled=true; value='Sending…';" -->
 							</div>
 						</div>
+						<input type="hidden" name="_next" value="assets/links/thankyou.html"/>
+						<input type="hidden" name="_subject" value="Website Contact Form"/>
 					</form>
 				</div>
 				<!-- Twitter API -->
@@ -170,8 +179,9 @@
 	<footer>
 		<ul class="copyright">
 			<p>
+				<a href="assets/links/thankyou.html" target="_blank">Thank you for visiting my website &raquo;</a><br />
 				Made with <i class='fa fa-heart'></i> by Nihar Garg on 10/10/15.<br />
-				Last updated on 02/10/17.
+				Last updated on 02/28/17.
 			</p>
 		</ul>
 	</footer>
@@ -184,10 +194,6 @@
 
 	<!-- Theme JavaScript -->
 	<script src='assets/js/main.js'></script>
-
-	<!-- Contact Form JavaScript -->
-	<script src="assets/js/jqBootstrapValidation.js"></script>
-	<script src="assets/js/contact_me.js"></script>
 
 	<!-- Extra -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>

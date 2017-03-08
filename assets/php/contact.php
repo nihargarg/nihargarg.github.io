@@ -1,7 +1,7 @@
 <?php
 if ($_POST["submit"]) {
 	$name = $_POST['name'];
-	$email = $_POST['email'];
+	$email = $_POST['_replyto'];
 	$message = $_POST['message'];
 	$to = 'iamnihargarg@outlook.com';
 	$subject = 'Website Contact Form';

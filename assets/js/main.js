@@ -16,17 +16,17 @@ $(function() {
 
 // ******************************
 
-// ENABLE SUBMIT BUTTON WHEN VERIFICATION IS PASSED
+/* ENABLE SUBMIT BUTTON WHEN VERIFICATION IS PASSED
 function enableContact() {
-  document.getElementById("contact-button").removeAttr("disabled");
+  document.getElementById("contact-button").disabled = "false";
 }
+*/
 
 /* BACKUP
 function enableContact() {
   $('#contact-button').removeAttr("disabled");
 }
 */
-
 
 // ******************************
 

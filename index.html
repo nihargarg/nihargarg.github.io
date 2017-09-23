@@ -19,6 +19,15 @@
 	<!-- Theme CSS -->
 	<link href='assets/css/style.css' rel="stylesheet" >
 
+	<!-- Google reCAPTCHA -->
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script>
+       function onSubmit(token) {
+         document.getElementById("submit-contact-form").submit();
+       }
+     </script>
+
 	<!-- Custom Fonts -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -126,7 +135,7 @@
 					<!-- Contact form using PHP:
 						<form method="post" action="assets/php/contact.php">
 					-->
-					<form action="https://formspree.io/iamnihargarg@outlook.com" method="POST">
+					<form id='submit-contact-form' action="https://formspree.io/iamnihargarg@outlook.com" action="?" method="POST">
 						<div class="row control-group">
 							<div class="form-group col-xs-12 floating-label-form-group controls">
 								<input type="text" class="form-control contact-input" id="name" name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required data-validation-required-message="Please enter your name.">
@@ -145,11 +154,22 @@
 								<p class="help-block text-danger"></p>
 							</div>
 						</div>
-						<!-- Google reCAPTCHA -->
+
+						<!--
+						<div class="row">
+							<div class="form-group">
+								<input type='submit' class='btn btn-lg btn-outline contact-submit' value='Analyze' name="contact-button" disabled="true" onClick="value='Analyzing…';">
+							</div>
+						</div>
+						-->
+						<!-- Google reCAPTCHA API
 						<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact"> </div>
+						-->
+
 						<!-- Submit Button -->
 						<div class="row">
 							<div class="form-group">
+								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback='onSubmit'>Submit</button>
 							</div>
 						</div>
 						<input type="hidden" name="_next" value="assets/links/thankyou.html"/>
@@ -190,10 +210,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<!-- Theme JavaScript -->
-	<script src='assets/js/main.js'></script>
+	<script src="assets/js/main.js"></script>
 
+	<!-- Sentimental Analysis -->
+	<script src="assets/js/sentimentalanalysis.js"></script>
+     
 	<!-- Extra -->
-	<script src='https://www.google.com/recaptcha/api.js'></script>
 	<script src="assets/js/typed.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>

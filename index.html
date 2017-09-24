@@ -163,7 +163,8 @@
 						<!-- Google Invisible reCAPTCHA -->
 						<div class="row">
 							<div class="form-group">
-								<button type='submit' class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback='onSubmit' name="contact-button">Submit</button>
+								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback='enableContact' name="verify-button">Verify</button>
+								<input type='submit' class='btn btn-lg btn-outline' value='Submit' disabled="true" name="contact-button">
 							</div>
 						</div>
 						<input type="hidden" name="_next" value="assets/links/thankyou.html"/>
@@ -172,7 +173,7 @@
 					<!-- Microsoft Azure Cognitive Services - Text Analytics API -->
 					<div class="row">
 						<div class="form-group">
-							<input type='submit' class='btn btn-lg btn-outline' value='Analyze' name="analyze-button">
+							<button class='btn btn-lg btn-outline' name="analyze-button">Analyze</button>
 						</div>
 						<div>
 							<img src="assets/img/positive_analysis.gif" id="PositiveImage" style="display:none">

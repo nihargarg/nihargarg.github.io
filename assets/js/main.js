@@ -42,10 +42,9 @@ $(function(){
 */
 
 // Google Invisible reCAPTCHA - Enable submit BUTTON after verification is passed
-/* function enableContact() {
+function enableContact() {
   $('#contact-button').removeAttr("disabled");
 }
-*/
 
 // ******************************
 

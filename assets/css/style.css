@@ -420,9 +420,9 @@ fieldset[disabled] .btn-success:hover {
 /* ANALYZE IMAGES */
 
 .PositiveImage {
-  max-width: 100%;
+  width: 100%;
 }
 
 .NegativeImage {
-  max-width: 100%;
+  width: 100%;
 }

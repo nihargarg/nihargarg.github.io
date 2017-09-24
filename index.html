@@ -136,7 +136,7 @@
 					<!-- Contact form using PHP:
 					<form method="post" action="assets/php/contact.php">
 					-->
-					<form id='submit-contact-form' action="https://formspree.io/iamnihargarg@outlook.com" action="?" method="POST">
+					<form id='submit-contact-form' action="https://formspree.io/iamnihargarg@outlook.com" method="POST">
 						<div class="row control-group">
 							<div class="form-group col-xs-12 floating-label-form-group controls">
 								<input type="text" class="form-control contact-input" id="name" name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required data-validation-required-message="Please enter your name.">
@@ -145,7 +145,7 @@
 						</div>
 						<div class="row control-group">
 							<div class="form-group col-xs-12 floating-label-form-group controls">
-								<input type="email" class="form-control contact-input" id="email" name="_replyto" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required data-validation-required-message="Please enter your email address.">
+								<input type="email" class="form-control contact-input" id="email" name="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required data-validation-required-message="Please enter your email address.">
 								<p class="help-block text-danger"></p>
 							</div>
 						</div>
@@ -160,6 +160,12 @@
 							<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact"></div>
 						</div>
 						-->
+						<!-- Microsoft Azure Cognitive Services - Text Analytics API -->
+						<div class="row">
+							<div class="form-group">
+								<input type='submit' class='btn btn-lg btn-outline' value='Analyze Text' name="analyze-button" onClick="value='Analyze Again?';">
+							</div>
+						</div>
 						<!-- Google Invisible reCAPTCHA -->
 						<div class="row">
 							<div class="form-group">
@@ -167,19 +173,12 @@
 							</div>
 						</div>
 						<input type="hidden" name="_next" value="assets/links/thankyou.html"/>
-						<input type="hidden" name="_subject" value="Website Contact Form"/>
+						<input type="hidden" name="_subject" value="garg.xyz Contact Form"/>
 					</form>
 				</div>
 				<!-- Twitter API -->
 				<div class="col-xs-12 col-sm-6">
-					<a class="twitter-timeline" data-height="500" href="https://twitter.com/iamnihargarg/lists/nihar-list">My twitter list!</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-				</div>
-				<div class="col-xs-12 col-sm-6">
-					<!-- Microsoft Azure Cognitive Services - Text Analytics API -->
-					<div class="form-group">
-						<input type='submit' class='btn btn-lg btn-outline' value='Analyze Text' name="analyze-button" onClick="value='Analyze Again?';">
-					</div>
-
+					<a class="twitter-timeline" data-height="500" href="https://twitter.com/iamnihargarg/lists/nihar-list">My twitter list</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 				<br /><br /><br />
 				<!-- Google Maps API -->

@@ -36,7 +36,7 @@ $(function(){
 // ******************************
 
 // Google reCAPTCHA V2 - Enable submit INPUT after verification is passed
-var enableContact as function() {
+function enableContact() {
   document.getElementById("contact-button").disabled = false;
 }
 

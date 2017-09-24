@@ -1,8 +1,8 @@
 $(function () {
 	
-	$("#AnaylyzeButton").click(function(){
+	$("#analyze-button").click(function(){
         var subscriptionKey = "a46c7301d6344c24b1b3b7c3659a38cf";
-        var textToAnalyze = $("#TextToAnalyze").val();
+        var textToAnalyze = $("#message").val();
 
         var webSvcUrl = "https://eastus2.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment";
 

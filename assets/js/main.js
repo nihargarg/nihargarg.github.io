@@ -36,15 +36,16 @@ $(function(){
 // ******************************
 
 // Google reCAPTCHA V2 - Enable submit INPUT after verification is passed
-/* function enableContact() {
+function enableContact() {
   document.getElementById("#contact-button").disabled = "false";
 }
-*/
+
 
 // Google Invisible reCAPTCHA - Enable submit BUTTON after verification is passed
-function enableContact() {
+/* function enableContact() {
   $('#contact-button').removeAttr("disabled");
 }
+*/
 
 // ******************************
 

@@ -160,21 +160,24 @@
 							<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact"></div>
 						</div>
 						-->
-						<!-- Microsoft Azure Cognitive Services - Text Analytics API -->
-						<div class="row">
-							<div class="form-group">
-								<input type='submit' class='btn btn-lg btn-outline' value='Analyze Text' name="analyze-button" onClick="value='Analyze Again?';">
-							</div>
-						</div>
 						<!-- Google Invisible reCAPTCHA -->
 						<div class="row">
 							<div class="form-group">
-								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback='onSubmit' name="contact-button" disabled='true'>Submit</button>
+								<button type='submit' class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback='onSubmit' name="contact-button" target="_blank">Submit</button>
 							</div>
 						</div>
 						<input type="hidden" name="_next" value="assets/links/thankyou.html"/>
 						<input type="hidden" name="_subject" value="garg.xyz Contact Form"/>
 					</form>
+					<!-- Microsoft Azure Cognitive Services - Text Analytics API -->
+					<div class="row">
+						<div class="form-group">
+							<input type='submit' class='btn btn-lg btn-outline' value='Analyze' name="analyze-button">
+						</div>
+
+						<!-- Text Analytics API -->
+
+					</div>
 				</div>
 				<!-- Twitter API -->
 				<div class="col-xs-12 col-sm-6">

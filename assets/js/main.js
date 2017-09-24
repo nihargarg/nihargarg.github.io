@@ -16,20 +16,6 @@ $(function() {
 
 // ******************************
 
-/* ENABLE SUBMIT BUTTON WHEN VERIFICATION IS PASSED
-function enableContact() {
-  document.getElementById("contact-button").disabled = "false";
-}
-*/
-
-/* BACKUP
-function enableContact() {
-  $('#contact-button').removeAttr("disabled");
-}
-*/
-
-// ******************************
-
 // HOVER TEXT IN HEADER
 function helloEnter(x) {
   x.textContent = "Nihar Garg."
@@ -46,6 +32,20 @@ $(function(){
     typeSpeed: 0
   });
 });
+
+// ******************************
+
+// Google reCAPTCHA V2 - Enable submit INPUT after verification is passed
+/* function enableContact() {
+  document.getElementById("#contact-button").disabled = "false";
+}
+*/
+
+// Google Invisible reCAPTCHA - Enable submit BUTTON after verification is passed
+/* function enableContact() {
+  $('#contact-button').removeAttr("disabled");
+}
+*/
 
 // ******************************
 

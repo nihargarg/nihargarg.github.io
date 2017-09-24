@@ -20,7 +20,6 @@
 	<link href='assets/css/style.css' rel="stylesheet" >
 
 	<!-- Google reCAPTCHA -->
-	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script>
        function onSubmit(token) {
@@ -58,8 +57,10 @@
 			</nav>
 
 		<div class='header-text'>
-			<!-- Hover Text --> <h1 class='header-title' onmouseenter="helloEnter(this)" onmouseleave="helloLeave(this)">My name is Garg,</h1>
-			<!-- Scroll Text --> <h2 class='header-subtitle text-left'>I'm a <span class="scrollText"></span></h2>
+			<!-- Hover Text -->
+			<h1 class='header-title' onmouseenter="helloEnter(this)" onmouseleave="helloLeave(this)">My name is Garg,</h1>
+			<!-- Scroll Text -->
+			<h2 class='header-subtitle text-left'>I'm a <span class="scrollText"></span></h2>
 		</div>
 	</header>
 
@@ -133,7 +134,7 @@
 				
 				<div class="col-xs-12 col-sm-6 text-center">
 					<!-- Contact form using PHP:
-						<form method="post" action="assets/php/contact.php">
+					<form method="post" action="assets/php/contact.php">
 					-->
 					<form id='submit-contact-form' action="https://formspree.io/iamnihargarg@outlook.com" action="?" method="POST">
 						<div class="row control-group">
@@ -154,22 +155,15 @@
 								<p class="help-block text-danger"></p>
 							</div>
 						</div>
-
-						<!--
+						<!-- Google reCAPTCHA V2
 						<div class="row">
-							<div class="form-group">
-								<input type='submit' class='btn btn-lg btn-outline contact-submit' value='Analyze' name="contact-button" disabled="true" onClick="value='Analyzing…';">
-							</div>
+							<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact"></div>
 						</div>
 						-->
-						<!-- Google reCAPTCHA API
-						<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact"> </div>
-						-->
-
-						<!-- Submit Button -->
+						<!-- Google Invisible reCAPTCHA -->
 						<div class="row">
 							<div class="form-group">
-								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback='onSubmit'>Submit</button>
+								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback='onSubmit' name="contact-button" disabled='true'>Submit</button>
 							</div>
 						</div>
 						<input type="hidden" name="_next" value="assets/links/thankyou.html"/>
@@ -178,7 +172,14 @@
 				</div>
 				<!-- Twitter API -->
 				<div class="col-xs-12 col-sm-6">
-					<a class="twitter-timeline" data-theme="light" href="https://twitter.com/iamnihargarg">Tweets by iamnihargarg</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<a class="twitter-timeline" href="https://twitter.com/iamnihargarg/lists/nihar-list">A Twitter List by iamnihargarg</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<!-- Microsoft Azure Cognitive Services - Text Analytics API -->
+					<div class="form-group">
+						<input type='submit' class='btn btn-lg btn-outline' value='Analyze Text' name="analyze-button" onClick="value='Analyze Again?';">
+					</div>
+					
 				</div>
 				<br /><br /><br />
 				<!-- Google Maps API -->

@@ -17,7 +17,7 @@ $(function () {
         })
         .done(function (data) {
 			if (data.errors.length > 0) {
-                outputDiv.html("No text to analyze! " + data.errors[0]);
+                outputDiv.html("No text to analyze!");
 			}
             else if (data.documents.length > 0) {
 				var score = data.documents[0].score;

@@ -415,3 +415,7 @@ fieldset[disabled] .btn-success:hover {
 .btn:focus {
     outline: 0
 }
+
+.google-maps {
+  margin-top: 25px;
+}

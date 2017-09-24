@@ -23,7 +23,7 @@ $(function () {
             else if (data.documents.length > 0) {
 				var score = data.documents[0].score;
 				if (score > 0.5){
-					outputText = "That is a Positive thing to say! "
+					outputText = "Thanks for yor positive message!"
 						+ "<br>"
 						+ "Score=" 
 						+ score.toFixed(2);
@@ -31,7 +31,7 @@ $(function () {
 					$("#NegativeImage").css("display", "none");
 				}
 				else{
-					outputText = "That is a Negative thing to say! "
+					outputText = "That's not a nice thing to say!"
 						+ "<br>"
 						+ "Score=" 
 						+ score.toFixed(2);

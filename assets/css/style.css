@@ -415,3 +415,14 @@ fieldset[disabled] .btn-success:hover {
 .btn:focus {
     outline: 0
 }
+
+
+/* ANALYZE IMAGES */
+
+.PositiveImage {
+  max-width: 100%;
+}
+
+.NegativeImage {
+  max-width: 100%;
+}

@@ -20,11 +20,11 @@
 	<link href='assets/css/style.css' rel="stylesheet" >
 
 	<!-- Google reCAPTCHA -->
+	<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script>
        function onSubmit(token) {
-         //document.getElementById("submit-contact-form").submit();
-         document.getElementById("#contact-button").disabled = "false";
+         document.getElementById("submit-contact-form").enableContact();
        }
      </script>
 
@@ -188,7 +188,6 @@
 				<div class="col-xs-12 col-sm-6">
 					<a class="twitter-timeline" data-height="800" href="https://twitter.com/iamnihargarg/lists/nihar-list">My twitter list</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
-				<br /><br /><br />
 				<!-- Google Maps API -->
 				<div>
 					<iframe width="100%"
@@ -222,12 +221,12 @@
 
 	<!-- Sentimental Analysis -->
 	<script src="assets/js/sentimentalanalysis.js"></script>
-     
+
 	<!-- Extra -->
 	<script src="assets/js/typed.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
 	<script> new WOW().init(); </script>
-	
+
 </body>
 </html>

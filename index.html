@@ -23,7 +23,8 @@
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script>
        function onSubmit(token) {
-         document.getElementById("submit-contact-form").submit();
+         //document.getElementById("submit-contact-form").enableContact();
+         document.getElementById("#contact-button").disabled = "false";
        }
      </script>
 
@@ -163,7 +164,7 @@
 						<!-- Google Invisible reCAPTCHA -->
 						<div class="row">
 							<div class="form-group">
-								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback='enableContact' name="verify-button" id="verify-button">Verify</button>
+								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback='onSubmit' name="verify-button" id="verify-button">Verify</button>
 								
 								<input type='submit' class='btn btn-lg btn-outline' value='Submit' disabled="true" name="contact-button" id="contact-button">
 							</div>

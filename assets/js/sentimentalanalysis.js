@@ -13,11 +13,11 @@ $(function () {
             url: webSvcUrl,
             headers: { "Ocp-Apim-Subscription-Key": subscriptionKey },
             contentType: "application/json",
-            data: '{"documents": [ { "language": "en", "id": "text01",  "text": "'+ textToAnalyze + '" }]}'
+            data: '{"documents": [{ "language": "en", "id": "text01", "text": "'+ textToAnalyze + '" }]}'
         })
         .done(function (data) {
 			if (data.errors.length > 0) {
-                outputDiv.html("Error: " + data.errors[0]);
+                outputDiv.html("No text to analyze! " + data.errors[0]);
 			}
             else if (data.documents.length > 0) {
 				var score = data.documents[0].score;
@@ -46,7 +46,7 @@ $(function () {
             }
 		})
 		.fail(function (err) {
-            $("#OutputDiv").text("No text to analyze. Error code: " + err.responseText);
+            $("#OutputDiv").text("ERROR! " + err.responseText);
 			$("#PositiveImage").css("display", "none");
 			$("#NegativeImage").css("display", "none");
 		});	

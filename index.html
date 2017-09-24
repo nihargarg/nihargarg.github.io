@@ -22,11 +22,6 @@
 	<!-- Google reCAPTCHA -->
 	<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 	<script src="https://www.google.com/recaptcha/api.js"></script>
-	<script>
-       function onSubmit(token) {
-         document.getElementById("submit-contact-form").enableContact();
-       }
-     </script>
 
 	<!-- Custom Fonts -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -164,7 +159,7 @@
 						<div class="row">
 							<div class="form-group">
 								<!-- Verify Button -->
-								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback="enableContact()" name="verify-button" id="verify-button">Verify</button>
+								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" data-callback="enableContact" name="verify-button" id="verify-button">Verify</button>
 								<!-- Submit Button -->
 								<input type='submit' class='btn btn-lg btn-outline' name="contact-button" id="contact-button" value='Submit' disabled="true">
 							</div>
@@ -175,18 +170,18 @@
 					<!-- Microsoft Azure Cognitive Services - Text Analytics API -->
 					<div class="row" >
 						<div class="form-group">
-							<button class='btn btn-lg btn-outline' name="analyze-button" id="analyze-button">Analyze</button>
+							<button class='btn btn-lg btn-outline' name="analyze-button" id="analyze-button">Analyze Message</button>
 						</div>
 						<div>
-							<img src="assets/img/positive_analysis.gif" id="PositiveImage" style="display:none" width="85%" height='200px'>
-							<img src="assets/img/negative_analysis.gif" id="NegativeImage" style="display:none" width="85%" height='200px'>
+							<img src="assets/img/positive_analysis.gif" id="PositiveImage" style="display:none" width="80%" height='200px'>
+							<img src="assets/img/negative_analysis.gif" id="NegativeImage" style="display:none" width="80%" height='200px'>
 						</div>
 						<div id="OutputDiv"></div>
 					</div>
 				</div>
 				<!-- Twitter API -->
 				<div class="col-xs-12 col-sm-6">
-					<a class="twitter-timeline" data-height="750" href="https://twitter.com/iamnihargarg/lists/nihar-list">My twitter list</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<a class="twitter-timeline" data-height="750" href="https://twitter.com/iamnihargarg/lists/nihar-list" data-tweet-limit="4">My twitter list</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 				<!-- Google Maps API -->
 				<div class='google-maps'>

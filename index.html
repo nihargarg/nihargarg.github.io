@@ -162,7 +162,7 @@
 						<div class="row">
 							<div class="form-group">
 								<!-- Verify Button -->
-								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" name="verify-button" id="verify-button" onclick="enableContact(); disabled=true;">Verify</button>
+								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" name="verify-button" id="verify-button" data-callback="enableContact()" onclick="disabled=true;">Verify</button>
 								<!-- <button class='btn btn-lg btn-outline' name="verify-button" id="verify-button" onclick="enableContact(); disabled=true;">Verify Test</button> -->
 								<!-- Submit Button -->
 								<input type='submit' class='btn btn-lg btn-outline' name="contact-button" id="contact-button" value='Submit' disabled="true">
@@ -185,9 +185,8 @@
 				<div class="col-xs-12 col-sm-6 text-center">
 					<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/nihargarg" data-format="inline" data-related="false" width='330'></script>
 
-					<div class="row fb-follow" data-href="https://www.facebook.com/gargxyz" data-layout="button_count" data-size="large" data-show-faces="true"></div>
-
-					<a class="row twitter-follow-button" href="https://twitter.com/iamnihargarg" data-size="large" width='330'> Follow Nihar Garg</a>
+					<iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fgargxyz&width=96&height=21&layout=button_count&size=large&show_faces=false&appId" width="96" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="5" allowTransparency="true"></iframe>
+					<a class="row twitter-follow-button" href="https://twitter.com/iamnihargarg" data-size="large" width='330'></a>
 
 					<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10154349877287867&width=500&show_text=true&height=680&appId" width="100%" height="566" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="false" data-colorscheme="dark"></iframe>
 				</div>
@@ -208,7 +207,7 @@
 			<p>
 				<a href="assets/links/thankyou.html">Thank you for visiting my website &raquo;</a><br />
 				Made with <i class='fa fa-heart'></i> by Nihar Garg on 10/10/15<br />
-				Last updated on 09/26/17
+				Last updated on 09/27/17
 			</p>
 		</ul>
 	</footer>

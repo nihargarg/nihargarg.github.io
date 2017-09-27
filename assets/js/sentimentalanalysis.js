@@ -1,3 +1,5 @@
+//MICROSOFT AZURE COGNITIVE SERVICES - TEXT ANALYTICS
+
 $(function () {
 	
 	$("#analyze-button").click(function(){
@@ -24,7 +26,7 @@ $(function () {
 				if (score >= 0.5){
 					outputText = "Thanks for yor positive message!"
 						+ "<br>"
-						+ "Score=" 
+						+ "Confidence Score = " 
 						+ score.toFixed(2);
 					$("#PositiveImage").css("display", "inline");
 					$("#NegativeImage").css("display", "none");
@@ -32,7 +34,7 @@ $(function () {
 				else{
 					outputText = "That's not a nice thing to say!"
 						+ "<br>"
-						+ "Score=" 
+						+ "Confidence Score = " 
 						+ score.toFixed(2);
 					$("#PositiveImage").css("display", "none");
 					$("#NegativeImage").css("display", "inline");

@@ -37,13 +37,8 @@ $(function(){
 
 // Google reCAPTCHA V2 - Enable submit INPUT after verification is passed
 function enableContact() {
-  document.getElementById("contact-button").disabled = false;
   event.preventDefault();
+  document.getElementById("contact-button").disabled = false;
+  document.getElementById("verify-button").disabled=true;
+  document.getElementById("verify-button").value='Verified &#10004';
 }
-
-
-// Google Invisible reCAPTCHA - Enable submit BUTTON after verification is passed
-/* function enableContact() {
-  $('#contact-button').removeAttr("disabled");
-}
-*/

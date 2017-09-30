@@ -290,6 +290,13 @@ footer .fa-heart {
 }
 
 
+/* SOCIAL MEDIA WIDGETS */
+
+.social-media {
+  margin-top: 25px;
+}
+
+
 /* SOCIAL MEDIA BUTTONS */
 
 .btn-outline,
@@ -414,9 +421,4 @@ fieldset[disabled] .btn-success:hover {
 .btn:active,
 .btn:focus {
     outline: 0
-}
-
-.social-media {
-  margin-top: 25px;
-  background-color:  #fff
 }

@@ -23,8 +23,7 @@
 	<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 
-	<!-- Custom Fonts -->
-	<!-- Icons: https://fortawesome.github.io/Font-Awesome/icons/ & https://www.google.com/design/icons/ -->
+	<!-- Custom Fonts & Icons: https://fortawesome.github.io/Font-Awesome/icons/ & https://www.google.com/design/icons/ -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
@@ -118,7 +117,7 @@
 				<div class="text-center">
 					<div class="row">
 						<ul class="list-inline">
-							<li> <a onClick="location.href='mailto:gargxyz@outlook.com'" target="_blank" class="btn btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a> </li>
+							<li> <a href='mailto:gargxyz@outlook.com' target="_blank" class="btn btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a> </li>
 							<li> <a href="http://linkedin.com/in/nihargarg/" target="_blank" class="btn btn-social btn-outline"><i class='fa fa-fw fa-linkedin'></i></a> </li>
 							<li> <a href="https://github.com/nihargarg" target="_blank" class="btn btn-social btn-outline"><i class='fa fa-fw fa-github'></i></a> </li>
 							<li> <a href="https://devpost.com/nihargarg" target="_blank" class="btn btn-social btn-outline"><i class='fa fa-fw fa-trophy'></i></a> </li>
@@ -133,6 +132,8 @@
 					<!-- Contact form using PHP:
 					<form method="post" action="assets/php/contact.php">
 					-->
+						<!-- Google Invisible reCAPTCHA Verify Button -->
+						<input type='submit' class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" name="verify-button" id="verify-button" data-callback="enableContact()" value='Verify' onclick="enableContact();disabled=true; value='Verified &#10004'" width='100%'>
 					<form id='submit-contact-form' action="https://formspree.io/gargxyz@outlook.com" method="POST">
 						<input type="hidden" name="_next" value="assets/links/thankyou.html"/>
 						<input type="hidden" name="_subject" value="garg.xyz Contact Form"/>
@@ -154,27 +155,19 @@
 								<p class="help-block text-danger"></p>
 							</div>
 						</div>
-						<!-- Google reCAPTCHA V2
-						<div class="row">
-							<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact"></div>
-						</div>
-						-->
-						<!-- Google Invisible reCAPTCHA -->
 						<div class="row">
 							<div class="form-group">
-								<!-- Verify Button -->
-								<button class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" name="verify-button" id="verify-button" data-callback="enableContact()" onclick="disabled=true;">Verify</button>
 								<!-- TEST Verify Button -->
 								<!-- <button class='btn btn-lg btn-outline' name="verify-button" id="verify-button" onclick="enableContact(); disabled=true;">Verify Test</button> -->
 								<!-- Submit Button -->
-								<input type='submit' class='btn btn-lg btn-outline' name="contact-button" id="contact-button" value='Submit' disabled="true">
+								<input type='submit' class='btn btn-lg btn-outline' name="contact-button" id="contact-button" value='Submit Form' disabled="true" width='100%'>
 							</div>
 						</div>
 					</form>
 					<!-- Microsoft Azure Cognitive Services - Text Analytics API -->
 					<div class="row" >
 						<div class="form-group">
-							<button class='btn btn-lg btn-outline' name="analyze-button" id="analyze-button">Analyze Message</button>
+							<button class='btn btn-lg btn-outline' name="analyze-button" id="analyze-button" width='100%'>Analyze Message</button>
 						</div>
 						<div>
 							<img src="assets/img/positive_analysis.gif" id="PositiveImage" style="display:none" width="80%" height='200px'>
@@ -189,14 +182,11 @@
 						<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="nihargarg"><a class="LI-simple-link" href='https://www.linkedin.com/in/nihargarg?trk=profile-badge' width='100%'>Nihar Garg</a></div>
 					</div>
 					<div class="social-media">
-						<iframe src="https://www.facebook.com/plugins/follow.php?href=https%3A%2F%2Fwww.facebook.com%2Fgargxyz&width=96&height=28&layout=button_count&size=large&show_faces=false&appId" width="100%" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					</div>
-					<div class="social-media">
-						<a class="row twitter-follow-button" href="https://twitter.com/iamnihargarg" data-size="large" width='100%'></a>
+						<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10154349877287867&width=500&show_text=true&height=680&appId" width="500" height="680" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="false"></iframe>
 					</div>
 					<div class='social-media'>
 						<iframe width="100%"
-							height="100%"
+							height="500px"
 							frameborder="0" style="border:0"
 							src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJG8KTfbLiEogRp9LyOjaK8Ek&key=AIzaSyBe8P7ECcCCM1oPPCKNHhYCCTiCgtPE--o" allowfullscreen>
 						</iframe>

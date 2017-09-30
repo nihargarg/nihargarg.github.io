@@ -20,13 +20,15 @@ $(function () {
         .done(function (data) {
 			if (data.errors.length > 0) {
                 outputDiv.html("No text to analyze! Please enter a message above.");
+                $("#PositiveImage").css("display", "none");
+				$("#NegativeImage").css("display", "none");
 			}
             else if (data.documents.length > 0) {
 				var score = data.documents[0].score;
 				if (score >= 0.5){
 					outputText = "Thanks for yor positive message!"
 						+ "<br>"
-						+ "Confidence Score = " 
+						+ "Score = " 
 						+ score.toFixed(2);
 					$("#PositiveImage").css("display", "inline");
 					$("#NegativeImage").css("display", "none");
@@ -34,7 +36,7 @@ $(function () {
 				else{
 					outputText = "That's not a nice thing to say!"
 						+ "<br>"
-						+ "Confidence Score = " 
+						+ "Score = " 
 						+ score.toFixed(2);
 					$("#PositiveImage").css("display", "none");
 					$("#NegativeImage").css("display", "inline");

@@ -39,6 +39,4 @@ $(function(){
 function enableContact() {
   event.preventDefault();
   document.getElementById("contact-button").disabled = false;
-  document.getElementById("verify-button").disabled=true;
-  document.getElementById("verify-button").value='Verified &#10004';
 }

@@ -85,7 +85,7 @@ section {
 
 .section-title {
   margin-top: 0;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 
   text-align: center;
   text-transform: uppercase;
@@ -292,11 +292,11 @@ footer .fa-heart {
 
 /* SOCIAL MEDIA WIDGETS */
 
-.social-media {
+.top-margin {
   margin-top: 25px;
 }
 
-.analyze-section {
+.bottom-margin {
   margin-bottom: 25px;
 }
 

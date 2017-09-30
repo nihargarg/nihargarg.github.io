@@ -115,7 +115,7 @@
 				<h2 class='section-title'>Contact Me</h2>
 				<!-- Buttons -->
 				<div class="text-center">
-					<ul class="list-inline">
+					<ul class="list-inline bottom-margin">
 						<li> <a href="https://twitter.com/iamnihargarg" target="_blank" class="btn btn-social btn-outline"><i class='fa fa-fw fa-twitter'></i></a> </li>
 						<li> <a href="https://github.com/nihargarg" target="_blank" class="btn btn-social btn-outline"><i class='fa fa-fw fa-github'></i></a> </li>
 						<li> <a href="https://devpost.com/nihargarg" target="_blank" class="btn btn-social btn-outline"><i class='fa fa-fw fa-trophy'></i></a> </li>
@@ -140,30 +140,26 @@
 						</div>
 						<div class="row control-group">
 							<div class="form-group col-xs-12 floating-label-form-group controls">
-								<textarea rows="5" class="form-control contact-input" id="message" name="message" placeholder="Enter a positive message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required data-validation-required-message="Please enter a message."></textarea>
+								<textarea rows="5" class="form-control contact-input" id="message" name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required data-validation-required-message="Please enter a message."></textarea>
 								<p class="help-block text-danger"></p>
 							</div>
 						</div>
-						<!-- Google reCAPTCHA V2 -->
-						<div class="row control-group">
-							<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact" align="center"></div>
-						</div>
 						<div>
-							<input type='submit' class='btn btn-lg btn-outline' name="contact-button" id="contact-button" value='Submit' disabled="true" style="width:80%;">
+							<input type='submit' class='btn btn-lg btn-outline bottom-margin' name="contact-button" id="contact-button" value='Submit' disabled="true" style="width:80%;">
 						</div>
 					</form>
-					<!-- Google Invisible reCAPTCHA Verify Button -->
-					<div>
-						<input class='g-recaptcha btn btn-lg btn-outline' data-sitekey="6Le40zEUAAAAAGgtNIe_kQ2UYMSEqj-wND8Kf2jl" name="verify-button" id="verify-button" data-callback="enableContact" value='Verify' style="width:80%;">
+					<!-- Google reCAPTCHA V2 -->
+					<div class="row control-group">
+						<div class="g-recaptcha" data-sitekey="6LfMmQ4TAAAAALAYFxOHTEoutS2VJ11KPB1yk8k_" data-callback="enableContact" align="center"></div>
 					</div>
 					<!-- Microsoft Azure Cognitive Services - Text Analytics API -->
-					<div class="row analyze-section">
-						<div class="form-group">
-							<button class='btn btn-lg btn-outline' name="analyze-button" id="analyze-button" style="width:80%;">Analyze</button>
+					<div class="row bottom-margin">
+						<div class='bottom-margin'>
+							<button class='btn btn-lg btn-outline' name="analyze-button" id="analyze-button" style="width:74%;">Analyze</button>
 						</div>
 						<div>
-							<img src="assets/img/positive_analysis.gif" id="PositiveImage" style="display:none" width="80%" height='200px'>
-							<img src="assets/img/negative_analysis.gif" id="NegativeImage" style="display:none" width="80%" height='200px'>
+							<img src="assets/img/positive_analysis.gif" id="PositiveImage" style="display:none" width="80%" height='45%'>
+							<img src="assets/img/negative_analysis.gif" id="NegativeImage" style="display:none" width="80%" height='45%'>
 						</div>
 						<div id="OutputDiv"></div>
 					</div>
@@ -171,9 +167,9 @@
 				<!-- Social Media API -->
 				<div class="col-xs-12 col-sm-6 text-center">
 					<div>
-						<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="nihargarg"><a class="LI-simple-link" href='https://www.linkedin.com/in/nihargarg?trk=profile-badge' width='100%'>Nihar Garg</a></div>
+						<div class="LI-profile-badge bottom-margin"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="nihargarg"><a class="LI-simple-link" href='https://www.linkedin.com/in/nihargarg?trk=profile-badge'>Nihar Garg</a></div>
 					</div>
-					<div class='social-media'>
+					<div>
 						<iframe width="100%" height="400px" frameborder="0" style="border:0"
 							src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJG8KTfbLiEogRp9LyOjaK8Ek&key=AIzaSyBe8P7ECcCCM1oPPCKNHhYCCTiCgtPE--o" allowfullscreen>
 						</iframe>
@@ -186,9 +182,9 @@
 	<footer>
 		<ul class="copyright">
 			<p>
-				<a href="assets/links/thankyou.html">Thank you for visiting my website &raquo;</a><br />
+				<a href="assets/links/thankyou.html" target="_blank">Thank you for visiting my website</a><br />
 				Made with <i class='fa fa-heart'></i> by Nihar Garg on 10/10/15<br />
-				Last updated on 09/27/17
+				Last updated on 09/30/17
 			</p>
 		</ul>
 	</footer>

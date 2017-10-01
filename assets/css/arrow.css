@@ -1,0 +1,27 @@
+.arrow { display: block;
+  text-align: center;
+  bottom: 20vh;
+  position: absolute;
+  left: 50%;
+  width: 10em;
+  margin-left: -5em;
+}
+@media (max-width: 480px) { .arrow { bottom: 1.5em; } }
+@media (max-height: 480px) { .arrow { bottom: 1em; } }
+
+.arrow:after { content: "";
+  display: block;
+  height: 1em;
+  width: 1em;
+  border-left: 0.5em solid #484D51;
+  border-bottom: 0.5em solid #484D51;
+  margin: 0 auto;
+  margin-top: 0.7em;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.arrow:hover:after { border-color: #8FACC0; }

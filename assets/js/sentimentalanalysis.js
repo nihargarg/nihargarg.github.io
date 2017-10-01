@@ -26,7 +26,7 @@ $(function () {
             else if (data.documents.length > 0) {
 				var score = data.documents[0].score;
 				if (score >= 0.5){
-					outputText = "Thanks for yor positive message!"
+					outputText = "Thanks for your positive message!"
 						+ "<br>"
 						+ "Score = " 
 						+ score.toFixed(2);

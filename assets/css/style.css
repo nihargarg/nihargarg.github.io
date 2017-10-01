@@ -58,7 +58,7 @@
   text-align: left;
 
   position: relative;
-  left: 45vh;
+  left: 27vw;
   position: absolute;
   right:0;
 }
@@ -69,15 +69,6 @@
   }
   .header-subtitle {
     font-size: 1em;
-  }
-}
-
-@media (max-width: 720px) {
-  .header-title {
-    font-size: 3em;
-  }
-  .header-subtitle {
-    font-size: 1.5em;
   }
 }
 

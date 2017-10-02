@@ -72,6 +72,15 @@
   }
 }
 
+@media (max-width: 720px) {
+  .header-title {
+    font-size: 3em;
+  }
+  .header-subtitle {
+    font-size: 1.5em;
+  }
+}
+
 section {
   padding: 100px 0;
   color: #fff;
@@ -135,6 +144,11 @@ section {
 }
 
 @media (max-width: 480px) {
+  .about-wrapper {
+    display: block;
+  }
+
+@media (max-width: 720px) {
   .about-wrapper {
     display: block;
   }

@@ -148,11 +148,6 @@ section {
     display: block;
   }
 
-@media (max-width: 720px) {
-  .about-wrapper {
-    display: block;
-  }
-
   .about-wrapper div:first-child {
     text-align: center;
   }

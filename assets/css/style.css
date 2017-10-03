@@ -10,7 +10,7 @@
   margin-bottom: 0;
   border: none;
   background-color: #222;
-  opacity: .6;
+  opacity: .5;
 }
 
 .navbar a {
@@ -18,7 +18,7 @@
 }
 
 .navbar:hover {
-  opacity: .9;
+  opacity: .8;
 }
 
 .main-header {

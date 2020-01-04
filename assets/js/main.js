@@ -3,13 +3,13 @@ function helloEnter(x) {
   x.textContent = "Nihar Garg."
 }
 function helloLeave(x) {
-  x.textContent = "My name is Garg,"
+  x.textContent = "Hi, my name is Nihar"
 }
 
 // SCROLL TEXT IN HEADER
 $(function(){
   $(".scrollText").typed({
-    strings: ["Mechanical Engineer...", "Problem Solver...", "Tech Enthusiast..."],
+    strings: ["Mechanical Engineer", "Problem Solver...", "Tech Enthusiast..."],
     loop: true,
     typeSpeed: 0
   });

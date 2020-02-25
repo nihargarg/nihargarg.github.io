@@ -166,6 +166,10 @@ section {
   opacity: .9;
 }
 
+.writing-section-content {
+  margin-left: 10%;
+}
+
 #contact-section {
   min-height: 100vh;
   background-image: url(../img/background4.jpg);

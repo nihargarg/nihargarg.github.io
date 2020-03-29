@@ -21,6 +21,7 @@ $(function(){
 function enableContact() {
   event.preventDefault();
   document.getElementById("contact-button").disabled = false;
+  document.getElementById("contact-button").background-color = white;
 }
 
 

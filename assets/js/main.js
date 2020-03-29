@@ -22,3 +22,11 @@ function enableContact() {
   event.preventDefault();
   document.getElementById("contact-button").disabled = false;
 }
+
+
+$('.arrow').click(function() {
+  $('html, body').animate({
+      scrollTop: $(".home-main").offset().top
+    }, 700);
+  return false;
+});

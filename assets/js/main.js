@@ -15,19 +15,17 @@ $(function(){
   });
 });
 
-// ******************************
-
 // Google reCAPTCHA V2 - Enable submit INPUT after verification is passed
 function enableContact() {
   event.preventDefault();
   document.getElementById("contact-button").disabled = false;
-  document.getElementById("contact-button").background-color = white;
 }
 
-
+/* Arrow bounce
 $('.arrow').click(function() {
   $('html, body').animate({
       scrollTop: $(".home-main").offset().top
     }, 700);
   return false;
 });
+*/

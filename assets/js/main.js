@@ -16,9 +16,9 @@ $(function(){
 });
 
 // Google reCAPTCHA V2 - Enable submit INPUT after verification is passed
-function enableContact() {
+function enableAnalyze() {
   event.preventDefault();
-  document.getElementById("contact-button").disabled = false;
+  document.getElementById("analyze-button").disabled = false;
 }
 
 /* Arrow bounce

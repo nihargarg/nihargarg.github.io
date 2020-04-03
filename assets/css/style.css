@@ -18,7 +18,7 @@
 }
 
 .navbar:hover {
-  opacity: .8;
+  opacity: .9;
 }
 
 .main-header {
@@ -163,7 +163,6 @@ section {
   background-image: url(../img/background3.jpg);
   background-position: center center;
   background-size: cover;
-  opacity: .9;
 }
 
 .writing-section-content {
@@ -175,7 +174,6 @@ section {
   background-image: url(../img/background4.jpg);
   background-position: center center;
   background-size: cover;
-  opacity: .9;
 }
 
 .contact-header {
@@ -216,8 +214,8 @@ section {
 }
 
 footer {
-  padding: 2em;
-
+  padding: 1em;
+  background-color: #F8F8FF;
   text-align: center;
   font-size: 1.2em;
 }

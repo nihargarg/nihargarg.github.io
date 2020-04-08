@@ -43,7 +43,8 @@
   text-align: left;
 
   position: relative;
-  left: 30vw;
+  left: 50vw;
+  margin-left: -300px;
   position: absolute;
   right: 0;
 }

@@ -18,6 +18,8 @@
 
 	<!-- Theme CSS -->
 	<link href='assets/css/style.css' rel="stylesheet">
+	<link href='assets/css/navbar.css' rel="stylesheet">
+	<link href='assets/css/progress-bar.css' rel="stylesheet">
 
 	<!-- Extra CSS -->
 	<link href='assets/css/arrow.css' rel="stylesheet">
@@ -52,6 +54,9 @@
 						</ul>
 					</div>
 				</div>
+				<div class="progress-container">
+				  <div class="progress-bar" id="myBar"></div>
+				</div>
 			</nav>
 
 		<div class='header-text'>
@@ -68,12 +73,12 @@
 			<div class='container'>
 				<h2 class='section-title'>About</h2>
 				<div class='row about-wrapper'>
-					<div class='col-xs-12 col-sm-3 col-md-3'>
-							<img src='assets/img/nihar_purdue.jpg' alt='nihar-headshot' class='img-circle headshot'/>
+					<div class='col-xs-12 col-sm-3 col-md-4'>
+						<img src='assets/img/nihar_purdue.jpg' alt='nihar-headshot' class='img-circle headshot'/>
 					</div>
 					<div class='col-xs-12 col-sm-9 col-md-9'>
 						<p class='section-content col-xs-12' align="justify">
-							I am a Purdue University graduate with a Bachelor of Science degree in Mechanical Engineering, a licensed Engineer in Training (EIT) and an accredited LEED Green Associate.
+							I am a Purdue University graduate with a Bachelor of Science degree in Mechanical Engineering, a licensed Engineer in Training (EIT) and an accredited LEED Green Associate.<br /><br />
 						</p>
 						<p class='section-content col-xs-12' align="justify">
 							I am a curious problem-solver looking to be part of a team where I can align my technical project management skills and passion for technology to provide data-driven solutions to real world challenges through engineering design.<br /><br />
@@ -83,10 +88,10 @@
 						</p>
 					</div>
 				</div>
-				<div class="text-center">
-					<a href="assets/links/Garg Resume.pdf" target="_blank" class="btn btn-lg btn-outline">&emsp;&emsp;&emsp;&emsp;<i class='fa fa-download'></i>&ensp; Resume&emsp;&emsp;&emsp;&emsp;</a>
-					&emsp;&emsp;
-					<a href="https://www.linkedin.com/in/nihargarg/" target="_blank" class="btn btn-lg btn-outline">&emsp;&emsp;&emsp;&emsp;<i class="fab fa-linkedin-in"></i>&ensp; LinkedIn&emsp;&emsp;&emsp;&emsp;</a>
+				<div class="text-right">
+					<a href="assets/links/Garg Resume.pdf" target="_blank" class="btn btn-lg btn-outline">&emsp;&emsp;&emsp;&emsp;<i class='fa fa-download'></i>&ensp;Resume&emsp;&emsp;&emsp;&emsp;</a>
+					&emsp;
+					<a href="https://www.linkedin.com/in/nihargarg/" target="_blank" class="btn btn-lg btn-outline">&emsp;&emsp;&emsp;&emsp;<i class="fab fa-linkedin-in"></i>&ensp;LinkedIn&emsp;&emsp;&emsp;&emsp;</a>
 				</div>
 			</div>
 		</section>
@@ -126,7 +131,7 @@
 		<section id='contact-section'>
 			<div class='container'>
 				<h2 class='section-title contact-header'>Contact</h2>
-				<div class="typeform-widget" data-url="https://gargxyz.typeform.com/to/w62Mzc" style="width: 100%; height: 600px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=w62Mzc&utm_source=typeform.com-01E4Z25G66T3F5Z9XMQC59J822-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+				<div class="typeform-widget" data-url="https://gargxyz.typeform.com/to/w62Mzc" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=w62Mzc&utm_source=typeform.com-01E4Z25G66T3F5Z9XMQC59J822-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
 			</div>
 		</section>
 	</main>
@@ -149,8 +154,11 @@
 
 	<!-- Theme JavaScript -->
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/navbar.js"></script>
+	<script src="assets/js/progress-bar.js"></script>
 
 	<!-- Extra JavaScript -->
+	<!-- <script src="assets/js/arrow.js"></script> -->
 	<script src="assets/js/smooth-scroll.js"></script>
 	<script src="assets/js/typed.min.js"></script>
 

@@ -1,0 +1,14 @@
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  background-color: #222;
+  opacity: .5;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.navbar:hover {
+  opacity: .9;
+}

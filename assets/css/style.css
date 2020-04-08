@@ -6,21 +6,6 @@
   color: white;
 }
 
-.navbar {
-  margin-bottom: 0;
-  border: none;
-  background-color: #222;
-  opacity: .5;
-}
-
-.navbar a {
-  color: white !important;
-}
-
-.navbar:hover {
-  opacity: .9;
-}
-
 .main-header {
   height: 100vh;
   background-image: url(../img/background1.jpg);
@@ -50,7 +35,7 @@
 
 .header-title {
   margin-top: 0;
-  font-size: 5em;  
+  font-size: 5em;
 }
 
 .header-subtitle {
@@ -58,9 +43,9 @@
   text-align: left;
 
   position: relative;
-  left: 32%;
+  left: 10%;
   position: absolute;
-  right:0;
+  right: 0;
 }
 
 @media (max-width: 480px) {

@@ -1,21 +1,17 @@
-#navbar{
-  position: fixed;
-  top: -50px;
-  width: 100%;
-  transition: top 0.3s;
-}
-
 .navbar {
   margin-bottom: 0;
   border: none;
-  background-color: #222;
-  opacity: .5;
+  width: 100%;
+  background-color: #2e2e2e;
+  opacity: .6;
+/*  top: -60px; /* Hide the navbar 50 px outside of the top view */
+/*  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .navbar a {
-  color: white !important;
+  color: white;
 }
 
 .navbar:hover {
-  opacity: .9;
+  opacity: .93;
 }

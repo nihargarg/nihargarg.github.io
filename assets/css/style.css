@@ -13,12 +13,6 @@
   background-size: cover;
 }
 
-@media only screen and (max-width: 320px) {
-  .main-header {
-    background-image: url(../img/background1a.jpg);
-  }
-}
-
 .black {
   position: absolute;
   width: 100%;

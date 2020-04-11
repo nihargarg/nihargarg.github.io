@@ -16,7 +16,8 @@ $(function(){
 });
 
 // Google reCAPTCHA V2 - Enable submit INPUT after verification is passed
+/*
 function enableAnalyze() {
   event.preventDefault();
   document.getElementById("analyze-button").disabled = false;
-}
+} */

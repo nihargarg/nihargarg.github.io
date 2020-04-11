@@ -2,16 +2,34 @@
   margin-bottom: 0;
   border: none;
   width: 100%;
-  background-color: #2e2e2e;
-  opacity: .6;
-/*  top: -60px; /* Hide the navbar 50 px outside of the top view */
-/*  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  background-color: #484D51;
+  opacity: .90;
 }
 
 .navbar a {
-  color: white;
+  color: white !important;
 }
 
 .navbar:hover {
-  opacity: .93;
+  opacity: .95;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #222;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #222;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e5e5e5;
+  width: 0%;
 }

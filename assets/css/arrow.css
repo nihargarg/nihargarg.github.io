@@ -13,8 +13,8 @@
   display: block;
   height: 1em;
   width: 1em;
-  border-left: 0.5em solid #484D51;
-  border-bottom: 0.5em solid #484D51;
+  border-left: 0.5em solid #ffffff;
+  border-bottom: 0.5em solid #ffffff;
   margin: 0 auto;
   margin-top: 0.7em;
   -webkit-transform: rotate(-45deg);
@@ -24,4 +24,4 @@
   transform: rotate(-45deg);
 }
 
-.arrow:hover:after { border-color: #8FACC0; }
+.arrow:hover:after { border-color: #484D51; }

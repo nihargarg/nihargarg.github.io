@@ -25,3 +25,26 @@
 }
 
 .arrow:hover:after { border-color: #484D51; }
+
+
+.btn-outline,
+.btn-outline:focus {
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+    margin-top: 15px
+}
+
+.btn-outline.active,
+.btn-outline:active,
+.btn-outline:hover {
+    color: #18BC9C;
+    background: #fff;
+    border: 2px solid #fff
+}
+
+.button-wrapper {
+  text-align: center;
+}

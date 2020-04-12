@@ -26,6 +26,8 @@
 
 .arrow:hover:after { border-color: #000000; }
 
+.btn { font-family: 'Open Sans', sans-serif;
+}
 
 .btn-outline,
 .btn-outline:focus {

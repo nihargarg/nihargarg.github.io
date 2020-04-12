@@ -50,7 +50,7 @@
   right: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 320px) {
   .main-header {
     background-image: url(../img/background1b.jpg);
   }

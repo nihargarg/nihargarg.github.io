@@ -44,25 +44,24 @@
   text-align: left;
 
   position: relative;
-  left: 50vw;
-  margin-left: -22vw;
+  left: 28vw;
   position: absolute;
   right: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 960px) {
   .main-header {
     background-image: url(../img/background1a.jpg);
   }
   .header-title {
-    font-size: 2em;
+    font-size: 4em;
   }
   .header-subtitle {
-    font-size: 1em;
+    font-size: 2.8em;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 720px) {
   .main-header {
     background-image: url(../img/background1a.jpg);
   }
@@ -70,15 +69,21 @@
     font-size: 3em;
   }
   .header-subtitle {
-    font-size: 1.5em;
+    font-size: 2.1em;
   }
 }
 
-@media screen {
+@media (max-width: 480px) {
   .main-header {
     background-image: url(../img/background1b.jpg);
   }
   .black {
     background-image: rgba(0,0,0,0.2);
+  }
+  .header-title {
+    font-size: 2em;
+  }
+  .header-subtitle {
+    font-size: 1.4em;
   }
 }

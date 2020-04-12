@@ -50,12 +50,9 @@
   right: 0;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
   .main-header {
-    background-image: url(../img/background1b.jpg);
-  }
-  .black {
-  	background-image: rgba(0,0,0,0.2));
+    background-image: url(../img/background1a.jpg);
   }
   .header-title {
     font-size: 2em;
@@ -74,5 +71,14 @@
   }
   .header-subtitle {
     font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-header {
+    background-image: url(../img/background1b.jpg);
+  }
+  .black {
+    background-image: rgba(0,0,0,0.2));
   }
 }

@@ -24,7 +24,7 @@
   transform: rotate(-45deg);
 }
 
-.arrow:hover:after { border-color: #484D51; }
+.arrow:hover:after { border-color: #000000; }
 
 
 .btn-outline,

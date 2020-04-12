@@ -50,9 +50,12 @@
   right: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .main-header {
     background-image: url(../img/background1b.jpg);
+  }
+  .black {
+  	background-image: rgba(0,0,0,0.2));
   }
   .header-title {
     font-size: 2em;
@@ -62,7 +65,7 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 900px) {
   .main-header {
     background-image: url(../img/background1a.jpg);
   }

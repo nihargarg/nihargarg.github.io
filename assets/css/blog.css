@@ -7,6 +7,15 @@
   font-size: 1.7em;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: color 200ms ease;
+  -moz-transition: color 200ms ease;
+  -ms-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.blog-nav:hover {
   color: #339DCA;
 }
 
@@ -26,16 +35,6 @@
   margin-bottom: 30px;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
-  cursor: pointer;
-  -webkit-transition: color 200ms ease;
-  -moz-transition: color 200ms ease;
-  -ms-transition: color 200ms ease;
-  -o-transition: color 200ms ease;
-  transition: color 200ms ease;
-}
-
-.blog-title:hover {
-  color: #339DCA;
 }
 
 .blog-body {

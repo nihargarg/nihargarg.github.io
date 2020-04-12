@@ -32,6 +32,7 @@
 
   color: white;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header-title {
@@ -47,6 +48,7 @@
   left: 28vw;
   position: absolute;
   right: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 960px) {

@@ -84,6 +84,7 @@ section {
 
 .writing-section-content {
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 #contact-section {
@@ -95,31 +96,6 @@ section {
 
 .contact-header {
   padding-bottom: 15px;
-}
-
-.contact-input {
-  padding: 25px;
-  margin: 25px 0;
-}
-
-.contact-input:first-child {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.contact-notification {
-  display: none;
-  margin-bottom: 0;
-}
-
-@media (max-width: 480px) {
-  .contact-input {
-    margin: 25px 0;
-  }
-
-  .contact-input:first-child {
-    margin-top: 25px;
-  }
 }
 
 .bottom-margin {

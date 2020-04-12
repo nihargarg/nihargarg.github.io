@@ -74,7 +74,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen {
   .main-header {
     background-image: url(../img/background1b.jpg);
   }

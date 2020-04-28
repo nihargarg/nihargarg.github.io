@@ -54,7 +54,7 @@
 
 @media (max-width: 960px) {
   .main-header {
-    background-image: url(../img/background1a.jpg);
+    background-image: url(../img/background1a.JPG);
   }
   .header-title {
     font-size: 4em;
@@ -66,7 +66,7 @@
 
 @media (max-width: 720px) {
   .main-header {
-    background-image: url(../img/background1a.jpg);
+    background-image: url(../img/background1a.JPG);
   }
   .header-title {
     font-size: 3em;
@@ -78,7 +78,7 @@
 
 @media (max-width: 600px) {
   .main-header {
-    background-image: url(../img/background1b.jpg);
+    background-image: url(../img/background1b.JPG);
   }
   .black {
     background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0));

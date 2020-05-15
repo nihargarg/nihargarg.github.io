@@ -1,5 +1,4 @@
 # Disable directory indexes
-Options -Indexes
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]

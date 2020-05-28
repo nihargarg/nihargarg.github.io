@@ -63,8 +63,6 @@ section {
 @media (max-width: 480px) {
   .about-wrapper {
     display: block;
-    margin-left: 10%;
-    margin-right: 10%;
   }
 
   .about-wrapper div:first-child {

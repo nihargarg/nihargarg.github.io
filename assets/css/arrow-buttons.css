@@ -24,9 +24,14 @@
   transform: rotate(-45deg);
 }
 
-.arrow:hover:after { border-color: #000000; }
+.arrow:hover:after {
+  height: 1.25em;
+  width: 1.25em;
+  border-color: #000000;
+}
 
-.btn { font-family: 'Open Sans', sans-serif;
+.btn {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .btn-outline,
@@ -42,7 +47,8 @@
 .btn-outline.active,
 .btn-outline:active,
 .btn-outline:hover {
-    color: #18BC9C;
+    color: #000;
+    font-size: 22px;
     background: #fff;
     border: 2px solid #fff
 }

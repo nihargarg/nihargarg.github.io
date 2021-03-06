@@ -9,7 +9,7 @@ function helloLeave(x) {
 // SCROLL TEXT IN HEADER
 $(function(){
   $(".scrollText").typed({
-    strings: ["Mechanical Engineer", "Problem Solver...", "Tech Enthusiast..."],
+    strings: ["Robotics Engineer", "Systems Designer", "Project Manager"],
     loop: true,
     typeSpeed: 0
   });

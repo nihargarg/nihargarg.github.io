@@ -17,10 +17,29 @@
     <link href='../assets/css/collapsible.css' rel='stylesheet'>
   </head>
   <body>
-    <nav class='blog-nav'>
-      <a href='../'> <i class="fas fa-chevron-right"></i> Nihar Garg</a>
-    </nav>
+    <header>
+      <nav class='blog-nav navbar-default'>
+          <div class='container-fluid'>
+              <div class='navbar-header'>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#covidNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href='../'><i class="fas fa-chevron-right"></i> Nihar Garg</a>
+              </div>
+              <div class='collapse navbar-collapse' id="covidNavbar">
+                  <ul class='nav navbar-nav navbar-right'>
+                      <li><a href='#robotics-section'>Robotics</a></li>
+                      <li><a href='#manufacturing-section'>Digital Manufacturing</a></li>
+                      <li><a href='#hackathon-section'>Hackathons</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
 
+    <main>
     <article class='blog-post'>
       <h1 class='blog-title'>Projects, Products and Research <i class="fas fa-mobile-alt"></i></h1></a>
 
@@ -32,255 +51,307 @@
           Some examples of my projects are listed below:
         </p>
 
-      <button class="collapsible">Robotics</button>
+      <section id='robotics-section'>
+        <button class="collapsible">Robotics</button>
+          <div class="content">
+            <h2>Robot Metabolism Project <i class="fas fa-network-wired"></i></h2>
+            <h4>Columbia University - Creative Machines Lab</h4>
+            <h4>Feb 2021 – Present</h4>
+            <p>
+              Research Assistant with Dr. Hod Lipson. <br />
+
+            </p>
+
+            <h2>Smart Bin Remover <i class="fa fa-trash"></i></h2>
+            <h4>Purdue University</h4>
+            <h4>Oct 2015 – May 2016</h4>
+            <p>
+              Throughout my time in college, I have been a part of many teams and worked on multiple projects. For our Senior Design Capstone Project, my team and I designed and built an innovative, fully autonomous robot that can attach to the three most common types of waste bins and deliver the attached bin to a desired pick up location on trash day. First, we defined the problem we were trying to solve, then we built a prototype, tested the software and controls, and evaluated the results. We repeated these steps numerous times and, several iterations later, ended with a product that was completely different from what we had imagined. We looked at various aspects of the robot, such as ease-of-use for the end user, durability of our product, ability to integrate with the existing systems and ability to meet the design parameters set by our end user (the local Waste Management company). We also designed the charging pod and programmed the robot to find its way back to the base, where it would plug in and charge itself when not in use. I headed the programming of the robot using an Arduino microcontroller and led the integration and testing of "smart" technologies to remove all user interaction. The Smart Bin Remover project placed 7th place (out of 49 total submissions) at the Mechanical Engineering Innovation Competition at Purdue University.
+              <br /> <i class="fab fa-youtube" aria-hidden="true"></i> <a href="https://youtu.be/HWuUaoVsQfk" target="_blank">  Watch Video </a>  |  <i class="fa fa-fire"></i> <a href="https://www.dropbox.com/s/y3z72w5g7kxj8ap/Smart%20Bin%20Remover.pdf?dl=0" target="_blank">  Pitch Deck </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/fwabwvzno4bkza8/AAA6-0_PE4uKJ9ZA1hJ94ACza?dl=0" target="_blank">  Photo Gallery </a>
+            </p>
+            <p>
+              <div class='row'>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/bin-remover-1.PNG" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/bin-remover-4.JPG" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/bin-remover-3.jpg" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-1 col-md-3'>
+                  <img src="img/bin-remover-2.png" class="img-rounded" style="width:100%;">
+                </div>
+              </div>
+            </p>
+
+            <h2>T2P2D - Toys to Physics to Design <i class="fas fa-layer-group"></i></h2>
+            <h4>Purdue University - C Design Lab</h4>
+            <h4>Aug 2014 – Dec 2014</h4>
+            <p>
+              Research Assistant with Dr. Karthik Ramani. <br />
+              The purpose of this project was to develop a framework to encourage a maker-based design mindset embedded in physics for K-12 students. <br />
+              • Developed STEM-focused teaching "Engineering by Design" workshops for K-12 students to design simple toys and 3D print them. <br />
+              • Benchmarked different open source CAD software and categorized them by ease-of-use. <br />
+              • Manufactured prototypes using 3D printing technologies (Ultimaker 2, Makerbot).
+            </p>
+
+            <h2>HandiMate <i class="fas fa-gamepad"></i></h2>
+            <h4>Purdue University - C Design Lab</h4>
+            <h4>Aug 2014 – Dec 2014</h4>
+            <p>
+              Research Assistant with Dr. Karthik Ramani. <br />
+              Robotics serves education in many ways. The process of developing robotic solutions provides a rich and meaningful context for engaging students.
+              • Created a robotics kit which enables users to construct and animate their toys using everyday craft materials. <br />
+              • Proposed new and innovative uses for the product using everyday objects such as cardboard, construction paper and spoons. <br />
+              • Tested and gave feedback on various constructions and promoted brainstorming among users.
+            </p>
+          </div>
+
+        <!--
+        <button class="collapsible">Research</button>
         <div class="content">
-          <h2>Robot Metabolism Project <i class="fas fa-network-wired"></i></h2>
-          <h4>Columbia University - Creative Machines Lab</h4>
-          <h4>Feb 2021 – Present</h4>
+          <h2>Spray Measurements & Analysis <i class="fas fa-microscope"></i></h2>
+          <h4>Purdue University - Applied Laser Spectroscopy Lab</h4>
+          <h4>Aug 2015 – May 2016</h4>
           <p>
-            Research Assistant with Dr. Hod Lipson. <br />
-
-          </p>
-
-          <h2>Smart Bin Remover <i class="fa fa-trash"></i></h2>
-          <h4>Purdue University</h4>
-          <h4>Oct 2015 – May 2016</h4>
-          <p>
-            Throughout my time in college, I have been a part of many teams and worked on multiple projects. For our Senior Design Capstone Project, my team and I designed and built an innovative, fully autonomous robot that can attach to the three most common types of waste bins and deliver the attached bin to a desired pick up location on trash day. First, we defined the problem we were trying to solve, then we built a prototype, tested the software and controls, and evaluated the results. We repeated these steps numerous times and, several iterations later, ended with a product that was completely different from what we had imagined. We looked at various aspects of the robot, such as ease-of-use for the end user, durability of our product, ability to integrate with the existing systems and ability to meet the design parameters set by our end user (the local Waste Management company). We also designed the charging pod and programmed the robot to find its way back to the base, where it would plug in and charge itself when not in use. I headed the programming of the robot using an Arduino microcontroller and led the integration and testing of "smart" technologies to remove all user interaction. The Smart Bin Remover project placed 7th place (out of 49 total submissions) at the Mechanical Engineering Innovation Competition at Purdue University.
-            <br /> <i class="fab fa-youtube" aria-hidden="true"></i> <a href="https://youtu.be/HWuUaoVsQfk" target="_blank">  Watch Video </a>  |  <i class="fa fa-fire"></i> <a href="https://www.dropbox.com/s/y3z72w5g7kxj8ap/Smart%20Bin%20Remover.pdf?dl=0" target="_blank">  Pitch Deck </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/fwabwvzno4bkza8/AAA6-0_PE4uKJ9ZA1hJ94ACza?dl=0" target="_blank">  Photo Gallery </a>
-          </p>
-          <p>
-            <div class='row'>
-              <div class='col-xs-4 col-sm-4 col-md-3'>
-                <img src="img/bin-remover-1.PNG" class="img-rounded" style="width:100%;">
-              </div>
-              <div class='col-xs-4 col-sm-4 col-md-3'>
-                <img src="img/bin-remover-2.png" class="img-rounded" style="width:100%;">
-              </div>
-              <div class='col-xs-4 col-sm-4 col-md-3'>
-                <img src="img/bin-remover-3.jpg" class="img-rounded" style="width:100%;">
-              </div>
-            </div>
-          </p>
-
-          <h2>T2P2D - Toys to Physics to Design <i class="fas fa-layer-group"></i></h2>
-          <h4>Purdue University - C Design Lab</h4>
-          <h4>Aug 2014 – Dec 2014</h4>
-          <p>
-            Research Assistant with Dr. Karthik Ramani. <br />
-            The purpose of this project was to develop a framework to encourage a maker-based design mindset embedded in physics for K-12 students. <br />
-            • Developed STEM-focused teaching "Engineering by Design" workshops for K-12 students to design simple toys and 3D print them. <br />
-            • Benchmarked different open source CAD software and categorized them by ease-of-use. <br />
-            • Manufactured prototypes using 3D printing technologies (Ultimaker 2, Makerbot).
-          </p>
-
-          <h2>HandiMate <i class="fas fa-draw-polygon"></i></h2>
-          <h4>Purdue University - C Design Lab</h4>
-          <h4>Aug 2014 – Dec 2014</h4>
-          <p>
-            Research Assistant with Dr. Karthik Ramani. <br />
-            • Created a robotics kit which enables users to construct and animate their toys using everyday craft materials. <br />
-            • Proposed new and innovative uses for the product using everyday objects such as cardboard, construction paper and spoons. <br />
-            • Tested and gave feedback on various constructions and promoted brainstorming among users.
+            Research Assistant with Dr. Sameer Naik. <br />
+            • Analyzed airblast atomizer under atmospheric and high/low pressure conditions. <br />
+            • Interpreted measurements of aviation liquid fuel sprays and studied the spray variation.
           </p>
         </div>
+        -->
+      </section>
 
-      <!--
-      <button class="collapsible">Research</button>
-      <div class="content">
-        <h2>Spray Measurements & Analysis <i class="fas fa-microscope"></i></h2>
-        <h4>Purdue University - Applied Laser Spectroscopy Lab</h4>
-        <h4>Aug 2015 – May 2016</h4>
-        <p>
-          Research Assistant with Dr. Sameer Naik. <br />
-          • Analyzed airblast atomizer under atmospheric and high/low pressure conditions. <br />
-          • Interpreted measurements of aviation liquid fuel sprays and studied the spray variation.
-        </p>
-      </div>
-      -->
+      <section id='manufacturing-section'>
+    	  <button class="collapsible">Digital Manufacturing</button>
+    		  <div class="content">
 
-  	  <button class="collapsible">Digital Manufacturing</button>
-  		<div class="content">
+            <h2>Laser Cut Box <i class="fas fa-box-open"></i></h2>
+            <h4>Columbia University</h4>
+            <h4>Jan 2021</h4>
+            <p>
+              The goal of this project was to perform software-driven fabrication. My partner and I wrote a program that asks the user for box dimensions, then generates an SVG file for laser-cutting and folding cardboard. This file can be imported into a laser-cutter software where the laser's power and speed settings are set for each line color. We selected three colors for our box design, one for cutting and two for engraving with different laser intensities.
+              <br /> <i class="fab fa-youtube" aria-hidden="true"></i> <a href="https://youtu.be/7u0MZNJsSTI" target="_blank">  Watch Video </a>  |  <i class="far fa-file-alt"></i> <a href="https://www.dropbox.com/s/enlyma6fdlc1i11/Project%20Report.pdf?dl=0" target="_blank">  Project Report </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/n9rant68npjp6kc/AACou0NdCUe5FD0NMDZwEksva?dl=0" target="_blank">  Photo Gallery </a>
+            </p>
+            <p>
+      	    <div class='row'>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/lasercutbox-svg.JPG" class="img-rounded" style="width:100%;">
+                </div>
+  	      	    <div class='col-xs-4 col-md-3'>
+                  <img src="img/lasercutter.jpg" class="img-rounded" alt="https://www.instagram.com/tv/CLhbYiuJZ0U" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/lasercutbox.jpg" class="img-rounded" alt="https://youtu.be/7u0MZNJsSTI" style="width:100%;">
+                </div>
+                <div class='col-xs-1 col-md-3'>
+                  <img src="img/lasercutbox-twitter.jpg" class="img-rounded" alt="https://twitter.com/CUSEAS/status/1359214029131165698" style="width:100%;">
+                </div>
+      	    </div>
+            </p>
 
-          <h2>Laser Cut Box <i class="fas fa-box-open"></i></h2>
-          <h4>Columbia University</h4>
-          <h4>Jan 2021 – Feb 2021</h4>
-          <p>
-            The goal of this project was to perform software-driven fabrication. My partner and I wrote a program that asks the user for box dimensions, then generates an SVG file for laser-cutting and folding cardboard. This file can be imported into a laser-cutter software where the laser's power and speed settings are set for each line color. We selected three colors for our box design, one for cutting and two for engraving with different laser intensities.
-            <br /> <i class="fab fa-youtube" aria-hidden="true"></i> <a href="https://youtu.be/7u0MZNJsSTI" target="_blank">  Watch Video </a>  |  <i class="far fa-file-alt"></i> <a href="https://www.dropbox.com/s/enlyma6fdlc1i11/Project%20Report.pdf?dl=0" target="_blank">  Project Report </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/n9rant68npjp6kc/AACou0NdCUe5FD0NMDZwEksva?dl=0" target="_blank">  Photo Gallery </a>
-          </p>
-          <p>
-    	    <div class='row'>
-      	      <div class='col-xs-3'>
-                <img src="img/lasercutbox-insta.jpg" class="img-rounded" alt="https://www.instagram.com/tv/CLhbYiuJZ0U" style="width:100%;">
+            <h2>Tealight Holder (Generative Design) <i class="fas fa-draw-polygon"></i></h2>
+            <h4>Columbia University</h4>
+            <h4>Feb 2021</h4>
+            <p>
+              The goal of this project was to perform generative design for 3D printing. I designed and 3D printed a lamp shade made entirely of a lattice design. I wrote a program that generated the lamp shade’s geometry procedurally and accommodated three LED tea-lights. The software used was OpenSCAD, which allowed me to output my file in STL format. This file could then be imported into a 3D printer slicer software in order to be 3D printed.
+              <br /> <i class="fab fa-youtube" aria-hidden="true"></i> <a href="https://youtu.be/ds0nPbrXnRo" target="_blank">  Watch Video </a>  |  <i class="far fa-file-alt"></i> <a href="https://www.dropbox.com/s/xytlrnoo84qezwc/Final%20Report.pdf?dl=0" target="_blank">  Project Report </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/w7izskqjczwfz96/AAA3xRA1mIcmV7lcBnPjG0hJa?dl=0" target="_blank">  Photo Gallery </a>
+            </p>
+            <p>
+              <div class='row'>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/tealight-flower.JPG" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/tealight-circular.JPG" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/tealight-vase.JPG" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-1 col-md-3'>
+                  <img src="img/tealight-vase-printed.jpg" class="img-rounded" style="width:100%;">
+                </div>
               </div>
-              <div class='col-xs-3'>
-    	          <img src="img/lasercutbox-twitter.jpg" class="img-rounded" alt="https://twitter.com/CUSEAS/status/1359214029131165698" style="width:100%;">
-    	        </div>
-              <div class='col-xs-3'>
-                <img src="img/lasercutbox-svg.JPG" class="img-rounded" style="width:100%;">
-              </div>
-	      	  <div class='col-xs-3'>
-                <img src="img/lasercutbox.jpg" class="img-rounded" alt="https://youtu.be/7u0MZNJsSTI" style="width:100%;">
-              </div>
-    	    </div>
-          </p>
+            </p>
 
-          <h2>Tealight Holder (Lampshade Lattice) <i class="fas fa-draw-polygon"></i></h2>
-          <h4>Columbia University</h4>
-          <h4>Feb 2021</h4>
-          <p>
-            The goal of this project was to perform generative design for 3D printing. I designed and 3D printed a lamp shade made entirely of a lattice design. I wrote a program that generated the lamp shade’s geometry procedurally and accommodated three LED tea-lights. The software used was OpenSCAD, which allowed me to output my file in STL format. This file could then be imported into a 3D printer slicer software in order to be 3D printed.
-            <br /> <i class="fab fa-youtube" aria-hidden="true"></i> <a href="https://youtu.be/ds0nPbrXnRo" target="_blank">  Watch Video </a>  |  <i class="far fa-file-alt"></i> <a href="https://www.dropbox.com/s/xytlrnoo84qezwc/Final%20Report.pdf?dl=0" target="_blank">  Project Report </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/w7izskqjczwfz96/AAA3xRA1mIcmV7lcBnPjG0hJa?dl=0" target="_blank">  Photo Gallery </a>
-          </p>
-          <p>
-            <div class='row'>
-              <div class='col-xs-3'>
-                <img src="img/tealight-flower.JPG" class="img-rounded" style="width:100%;">
+            <h2>Software-Controlled Embroidery <i class="fas fa-tshirt"></i></h2>
+            <h4>Columbia University</h4>
+            <h4>Mar 2021</h4>
+            <p>
+              The goal of this project was to perform software-controlled embroidery. I wrote a program that generated an embroidery design with multiple basic shapes and a parametric fractal shape. In order to perform over-stitching and to make the pattern stand out, all straight edges of the design were converted to a zig-zag pattern in the code. The program requests the user to input the desired complexity and outputs a JEF file for the user to visualize on Hatch. Finally, the pattern was sewn on a real garment using an automated embroidery machine (Janome MC9900). Our design added some complexity by using multiple thread types, thread colors and spacing between shapes.
+              <br /> <i class="fab fa-youtube" aria-hidden="true"></i> <a href="https://youtu.be/LUgRhqrwF1w" target="_blank">  Watch Video </a>  |  <i class="far fa-file-alt"></i> <a href="https://www.dropbox.com/s/e1lq1pxxsjke228/Final%20Report.pdf?dl=0" target="_blank">  Project Report </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/ehyknkqxdonsvu3/AAC7Ls5DeqkAnqegIT_GPSCra?dl=0" target="_blank">  Photo Gallery </a>
+            </p>
+  	  	    <p>
+              <div class='row'>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/embroidery_sketch.png" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/embroidery_hatch.png" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/embroidery_final.jpg" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-1 col-md-3'>
+                  <img src="img/embroidery_machine.JPG" class="img-rounded" style="width:100%;">
+                </div>
               </div>
-              <div class='col-xs-3'>
-                <img src="img/tealight-circular.JPG" class="img-rounded" style="width:100%;">
-              </div>
-              <div class='col-xs-3'>
-                <img src="img/tealight-vase.JPG" class="img-rounded" style="width:100%;">
-              </div>
-              <div class='col-xs-3'>
-                <img src="img/tealight-vase-printed.jpg" class="img-rounded" style="width:100%;">
-              </div>
-            </div>
-          </p>
+            </p>
 
-          <h2>Embroidery <i class="fas fa-tshirt"></i></h2>
-          <h4>Columbia University</h4>
-          <h4>March 2021</h4>
-          <p>
-            The goal of this project was to perform software-controlled embroidery. I wrote a program that generated an embroidery design with multiple basic shapes and a parametric fractal shape. In order to perform over-stitching and to make the pattern stand out, all straight edges of the design were converted to a zig-zag pattern in the code. The program requests the user to input the desired complexity and outputs a JEF file for the user to visualize on Hatch. Finally, the pattern was sewn on a real garment using an automated embroidery machine (Janome MC9900). Our design added some complexity by using multiple thread types, thread colors and spacing between shapes.
-            <br /> <i class="fab fa-youtube" aria-hidden="true"></i> <a href="https://youtu.be/LUgRhqrwF1w" target="_blank">  Watch Video </a>  |  <i class="far fa-file-alt"></i> <a href="https://www.dropbox.com/s/e1lq1pxxsjke228/Final%20Report.pdf?dl=0" target="_blank">  Project Report </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/ehyknkqxdonsvu3/AAC7Ls5DeqkAnqegIT_GPSCra?dl=0" target="_blank">  Photo Gallery </a>
-          </p>
-	  	  <p>
-            <div class='row'>
-              <div class='col-xs-3'>
-                <img src="img/embroidery_sketch.png" class="img-rounded" style="width:100%;">
+            <h2>Topology Optimization <i class="fas fa-dice-d20"></i></h2>
+            <h4>Columbia University</h4>
+            <h4>Mar 2021</h4>
+            <p>
+              The goal of this project was to provide a concept for table and chair to be designed using topology optimization tools and manufactured using additive manufacturing. <br />
+              Through this project, I proposed an optimal design for a desk that is 30” high, 24” deep and 60” wide, and a chair with a back. I defined boundary conditions, assigned material properties (Nylon) and applied load cases for the topology optimization sequence. The chair is suitable for seating an adult weighing up to 150 KG, and the table can sustain the weight of the adult if they were to stand on it. <br />
+              I also ran an analysis on the result to verify the integrity of the design. Finally, I produced a rendering of the desk and the chair together, with the chair positioned where a person would be sitting on it while using the desk. This file could then be imported into a 3D printer slicer software in order to be 3D printed.
+              <br /> <i class="fas fa-chair"></i> <a href="https://www.dropbox.com/sh/f7ijhzz5772w71b/AAAlt6dkORfuv3zSM1VeHBXFa?dl=0" target="_blank">  Design Rendering </a>  |  <i class="far fa-file-alt"></i> <a href="https://www.dropbox.com/s/k5x1fx9m0yi09fy/Final%20Report.pdf?dl=0" target="_blank">  Project Report </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/186epum9cm4p1cu/AAD-JoAWb_I0YPnNc4rK0Rcia?dl=0" target="_blank">  Photo Gallery </a>
+            </p>
+            <p>
+              <div class='row'>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/topology_table_constraint.png" class="img-rounded" alt="Design Constraint" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/topology_table_optimized.png" class="img-rounded" alt="Topology Optimization" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/topology_table_lattice.png" class="img-rounded" alt="Lattice Optimization" style="width:100%;">
+                </div>
+                <div class='col-xs-1 col-md-3'>
+                  <img src="img/topology_table_analysis.png" class="img-rounded" alt="Analysis" style="width:100%;">
+                </div>
               </div>
-              <div class='col-xs-3'>
-                <img src="img/embroidery_hatch.png" class="img-rounded" style="width:100%;">
+              <br />
+              <div class='row'>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/topology_chair_constraint.png" class="img-rounded" alt="Design Constraint" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/topology_chair_optimized.png" class="img-rounded" alt="Topology Optimization" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/topology_chair_lattice.png" class="img-rounded" alt="Lattice Optimization" style="width:100%;">
+                </div>
+                <div class='col-xs-1 col-md-3'>
+                  <img src="img/topology_chair_analysis.png" class="img-rounded" alt="Analysis" style="width:100%;">
+                </div>
               </div>
-              <div class='col-xs-3'>
-                <img src="img/embroidery_final.jpg" class="img-rounded" style="width:100%;">
+              <br />
+              <div class='row'>
+                <div class='col-xs-6'>
+                  <img src="img/topology_render_1.png" class="img-rounded" alt="Render with Human" style="width:100%;">
+                </div>
+                <div class='col-xs-6'>
+                  <img src="img/topology_render_2.png" class="img-rounded" alt="Render in Room" style="width:100%;">
+                </div>
               </div>
-              <div class='col-xs-3'>
-                <img src="img/embroidery_machine.JPG" class="img-rounded" style="width:100%;">
-              </div>
-            </div>
-          </p>
+            </p>
 
-        </div>
+            <h2>Lattice Optimization <i class="fas fa-dharmachakra"></i></h2>
+            <h4>Columbia University</h4>
+            <h4>Apr 2021</h4>
+            <p>
+              The goal of this project was to redesign a product using a lattice. For this project, I wanted to solve a problem that made headlines in 2013 - a little after the Mars Curiosity Rover landed. NASA engineers began to notice significant wheel damage due to the unexpectedly harsh terrain, causing concern about the ability of the rover to drive far enough to complete its intended mission. <br />
+              My solution was to design a protective lattice shell around the existing tire which would conform to the terrain and do not sink as much as rigid wheels. These new tires could also carry heavier payloads for the same given mass and volume. Since the shell is a lattice, it would weigh significantly less (thus costing less per launch) than a similar sized tire. This new tire would be capable of performing in a Martian or Lunar environment by absorbing energy from impacts at moderate to high speeds, allowing exploration vehicles to move at speeds significantly higher than the current Mars rovers. My design allows for the tire to be made with a wide range of materials because the forces are distributed across the lattice.
+              <br /> <i class="fas fa-truck-monster"></i> <a href="https://www.dropbox.com/sh/lxe6m51dihm2scc/AADwwu86QGyaKMJqcEilVHMga?dl=0" target="_blank">  Design Rendering </a>  |  <i class="far fa-file-alt"></i> <a href="https://www.dropbox.com/s/7lr86nohdasbodm/Final%20Report.pdf?dl=0" target="_blank">  Project Report </a>  |  <i class='fa fa-camera-retro'></i> <a href="https://www.dropbox.com/sh/ay49y93fvbnu4rq/AABTbU6-6pJd76InlIGTN7zHa?dl=0" target="_blank">  Photo Gallery </a>
+            </p>
+            <p>
+              <div class='row'>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/lattice_1.png" class="img-rounded" alt="Original Design" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/lattice_2.png" class="img-rounded" alt="Design Constraint" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/lattice_3.png" class="img-rounded" alt="Lattice Optimization" style="width:100%;">
+                </div>
+                <div class='col-xs-1 col-md-3'>
+                  <img src="img/lattice_4.png" class="img-rounded" alt="Gradient Lattice" style="width:100%;">
+                </div>
+              </div>
+              <br />
+              <div class='row'>
+                <div class='col-xs-6'>
+                  <img src="img/lattice_render1.jpg" class="img-rounded" alt="Landing Render" style="width:100%;">
+                </div>
+                <div class='col-xs-6'>
+                  <img src="img/lattice_render2.png" class="img-rounded" alt="Render on Mars" style="width:100%;">
+                </div>
+              </div>
+            </p>
 
-      <button class="collapsible">Hackathons</button>
+          </div>
+      </section>
+
+      <section id='hackathon-section'>
+        <button class="collapsible">Hackathons</button>
+          <div class="content">
+            <h2>Project LiT <i class="fas fa-stopwatch"></i></h2>
+            <h4>University of Illinois Urbana-Champaign - HackIllinois Hackathon</h4>
+            <h4>Feb 2016</h4>
+            <p>
+              Received recognition for creating one of the best hardware hacks at Hack Illinois, one of the largest University Hackathons in the country with over 1000 participants. We created an internet connected wearable breathalyzer to warn people when they are over the alcohol permissible limit for driving. It uses an OLED panel that notifies you of your blood alcohol content and an RGB LED strip that alerts everyone around you if have crossed the legal limit, so your friends can stop you from driving or stop themselves from getting in the car with you. My contributions included implementing the engineering design process and writing code to integrate all the electrical components using an Arduino microcontroller. Project LiT won top 5 for best hardware hack <i class="fas fa-trophy"></i></h2> out of 216 total submissions at the HackIllinois Hackathon at University of Illinois at Urbana-Champaign.
+              <br /> <i class='fa fa-car'></i> <a href="http://devpost.com/software/breathalyzer" target="_blank">  Project LiT </a>  |  <i class="fas fa-chart-line"></i> <a href="https://www.dropbox.com/s/90zxyup99xo73xl/Pitch%20Deck%20-%20Project%20Lit.pdf?dl=0" target="_blank">  Pitch Deck </a>  |  <i class='fa fa-beer'></i> <a href="https://www.dropbox.com/sh/9810ux2qs7n7cms/AABDzo8bJUktzQxQpNGnamuPa?dl=0" target="_blank">  Photo Gallery </a>
+            </p>
+            <p>
+              <div class='row'>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/lit-1.jpg" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/lit-2.jpg" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/lit-3.jpg" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-1 col-md-3'>
+                  <img src="img/lit-4.png" class="img-rounded" style="width:100%;">
+                </div>
+              </div>
+            </p>
+
+            <h2>Project Green Light <i class="fas fa-lightbulb"></i></h2>
+            <h4>Purdue University - BoilerMake Hackathon</h4>
+            <h4>Oct 2015</h4>
+            <p>
+              Project Green Light is a social initiative which helps people connect more easily. We struggle and often find it awkward to approach and meet new people in the real world. Over the weekend-long hackathon, my team and I wanted to design something new and bring it to life, and we believed that our product would revolutionize social interactions. We wanted to bring the comfort of interacting with people behind a screen to the real world, using a simple and unobtrusive system. We tried to solve the social engineering problem of finding seats in crowded locations with tables, by building an LED box with switches for occupied, silence or mingle statuses for each table. The beacon provides users with information such as table availability and status through data collected from the Arduino devices. In addition, we want to create a tool which can measure the rate of change in the willingness for people to socially interact with one another in any given environment. My contributions included collaborating on the design and build of the product, developing the product all the way from ideation to completion and working on the presentation and documentation for the project. Project Green Light won top 5 for best hack <i class="fas fa-trophy"></i></h2> out of 84 total submissions at the BoilerMake Hackathon at Purdue University.
+              <br /> <i class='fa fa-users'></i> <a href="http://devpost.com/software/project-green-light-fpwq8u" target="_blank">  Project Green Light </a>  |  <i class="fa fa-play"></i> <a href="https://www.dropbox.com/s/fxqjeco83ajjpd8/projectgreenlight_pitchdeck.pdf?dl=0" target="_blank">  Pitch Deck </a>  |  <i class='fa fa-camera'></i> <a href="https://www.dropbox.com/sh/y3g2kw0800hcqai/AABx62fcVD8_2hxdKoQ0D9YDa?dl=0" target="_blank">  Photo Gallery </a>
+            </p>
+            <p>
+              <div class='row'>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/green-light-1.jpg" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/green-light-2.jpg" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-4 col-md-3'>
+                  <img src="img/green-light-3.jpg" class="img-rounded" style="width:100%;">
+                </div>
+                <div class='col-xs-1 col-md-3'>
+                  <img src="img/green-light-4.JPG" class="img-rounded" style="width:100%;">
+                </div>
+              </div>
+            </p>
+
+            <h2>Project BigDoc <i class="fa fa-heartbeat"></i></h2>
+            <h4>Washington University in St. Louis - ArchHacks Hackathon</h4>
+            <h4>Nov 2016</h4>
+            <p>
+              Project BigDoc is a managed care solution that uses big data technologies to proactively prevent medical emergencies. Healthcare enterprises are currently investing a lot of money in personalized preventative care plans for people who lack access to basic healthcare due to lack of money, transportation or resources. I managed the engineering development process of the product. Generated and evaluated all the content around the idea from the ideation phase. Designed the solution and innovated to overcome challenges and find future uses
+              <br /> <i class='fa fa-medkit'></i> <a href="https://devpost.com/software/project-bigdoc" target="_blank">  Project BigDoc </a>  |  <i class="fas fa-handshake"></i> <a href="https://www.dropbox.com/s/ofzrqw0vaw6vff8/Pitch%20Deck%20-%20Project%20BigDoc.pdf?dl=0" target="_blank">  Pitch Deck </a>  |  <i class="far fa-image"></i> <a href="https://www.dropbox.com/sh/9892xdhy4h97ar6/AAC9NeuBRaoki8S0HZBHzV_Ka?dl=0" target="_blank">  Photo Gallery </a>
+            </p>
+          </div>
+      </section>
+
+      <button class="collapsible">Architecture & Engineering</button>
         <div class="content">
-          <h2>Project LiT <i class="fas fa-stopwatch"></i></h2>
-          <h4>University of Illinois Urbana-Champaign - HackIllinois Hackathon</h4>
-          <h4>Feb 2016</h4>
-          <p>
-            Received recognition for creating one of the best hardware hacks at Hack Illinois, one of the largest University Hackathons in the country with over 1000 participants. We created an internet connected wearable breathalyzer to warn people when they are over the alcohol permissible limit for driving. It uses an OLED panel that notifies you of your blood alcohol content and an RGB LED strip that alerts everyone around you if have crossed the legal limit, so your friends can stop you from driving or stop themselves from getting in the car with you. My contributions included implementing the engineering design process and writing code to integrate all the electrical components using an Arduino microcontroller. Project LiT won top 5 for best hardware hack <i class="fas fa-trophy"></i></h2> out of 216 total submissions at the HackIllinois Hackathon at University of Illinois at Urbana-Champaign.
-            <br /> <i class='fa fa-car'></i> <a href="http://devpost.com/software/breathalyzer" target="_blank">  Project LiT </a>  |  <i class="fas fa-chart-line"></i> <a href="https://www.dropbox.com/s/90zxyup99xo73xl/Pitch%20Deck%20-%20Project%20Lit.pdf?dl=0" target="_blank">  Pitch Deck </a>  |  <i class='fa fa-beer'></i> <a href="https://www.dropbox.com/sh/9810ux2qs7n7cms/AABDzo8bJUktzQxQpNGnamuPa?dl=0" target="_blank">  Photo Gallery </a>
-          </p>
-          <p>
-            <div class='row'>
-              <div class='col-xs-3'>
-                <img src="img/lit-1.jpg" class="img-rounded" style="width:100%;">
-              </div>
-              <div class='col-xs-3'>
-                <img src="img/lit-2.jpg" class="img-rounded" style="width:100%;">
-              </div>
-              <div class='col-xs-3'>
-                <img src="img/lit-3.jpg" class="img-rounded" style="width:100%;">
-              </div>
-              <div class='col-xs-3'>
-                <img src="img/lit-4.png" class="img-rounded" style="width:100%;">
-              </div>
-            </div>
-          </p>
-
-          <h2>Project Green Light <i class="fas fa-lightbulb"></i></h2>
-          <h4>Purdue University - BoilerMake Hackathon</h4>
-          <h4>Oct 2015</h4>
-          <p>
-            Project Green Light is a social initiative which helps people connect more easily. It provides you information such as table availability and status through data collected from the Arduino devices. My contributions included collaborating on the design and build of the product, developing the product all the way from ideation to completion and working on the presentation and documentation for the project. Over the weekend-long event, my team and I wanted to design something new and bring it to life, and we truly believe this product will revolutionize your social interactions. Project Green Light won top 5 for best hack <i class="fas fa-trophy"></i></h2> out of 84 total submissions at the BoilerMake Hackathon at Purdue University.
-            <br /> <i class='fa fa-users'></i> <a href="http://devpost.com/software/project-green-light-fpwq8u" target="_blank">  Project Green Light </a>  |  <i class="fa fa-play"></i> <a href="https://www.dropbox.com/s/fxqjeco83ajjpd8/projectgreenlight_pitchdeck.pdf?dl=0" target="_blank">  Pitch Deck </a>  |  <i class='fa fa-camera'></i> <a href="https://www.dropbox.com/sh/y3g2kw0800hcqai/AABx62fcVD8_2hxdKoQ0D9YDa?dl=0" target="_blank">  Photo Gallery </a>
-          </p>
-          <p>
-            <div class='row'>
-              <div class='col-xs-4 col-sm-4 col-md-3'>
-                <img src="img/green-light-1.jpg" class="img-rounded" style="width:100%;">
-              </div>
-              <div class='col-xs-4 col-sm-4 col-md-3'>
-                <img src="img/green-light-2.jpg" class="img-rounded" style="width:100%;">
-              </div>
-              <div class='col-xs-4 col-sm-4 col-md-3'>
-                <img src="img/green-light-3.jpg" class="img-rounded" style="width:100%;">
-              </div>
-            </div>
-          </p>
-
-          <h2>Project BigDoc <i class="fa fa-heartbeat"></i></h2>
-          <h4>Washington University St. Louis - ArchHacks Hackathon</h4>
-          <h4>Nov 2016</h4>
-          <p>
-            Project BigDoc is a managed care solution that uses big data technologies to proactively prevent medical emergencies. Healthcare enterprises are currently investing a lot of money in personalized preventative care plans for people who lack access to basic healthcare due to lack of money, transportation or resources. I managed the engineering development process of the product. Generated and evaluated all the content around the idea from the ideation phase. Designed the solution and innovated to overcome challenges and find future uses
-            <br /> <i class='fa fa-medkit'></i> <a href="https://devpost.com/software/project-bigdoc" target="_blank">  Project BigDoc </a>  |  <i class="fas fa-handshake"></i> <a href="https://www.dropbox.com/s/ofzrqw0vaw6vff8/Pitch%20Deck%20-%20Project%20BigDoc.pdf?dl=0" target="_blank">  Pitch Deck </a>  |  <i class="far fa-image"></i> <a href="https://www.dropbox.com/sh/9892xdhy4h97ar6/AAC9NeuBRaoki8S0HZBHzV_Ka?dl=0" target="_blank">  Photo Gallery </a>
-          </p>
-        </div>
-
-      <button class="collapsible">COVID Response</button>
-        <div class="content">
-       	  <h2>Dentist Face Shields <i class="fas fa-tooth"></i></h2>
-        	<p>
-          	In late May, a local dentist reached out to me saying that her clinic was in dire need of face shields, as the ones they ordered online were delayed and new orders would take too long arrive. <br />
-            (Refer to <u><a href='../covid/'>COVID projects page</a></u>)<br />
-
-          	<b>Problem Statement:</b> <br />
-          	• Design a face shield to be worn over the face of dental professionals <br />
-          	• Reduce the risk of contact with infectious splash, splatter and spray to protect face better than glasses and masks alone <br />
-
-  					<b>Constraints:</b> <br />
-  					• Distance between face and the shield must be 2.5" at minimum, because magnifying loupes and lights have to fit <br />
-  					• Shield must extend as far back as possible from the sides, preferably up to ears <br />
-  					• Comfortable to be worn for a long period of time <br />
-
-  					<b>Results:</b> <br />
-  					• Designed and delivered face shields within 3 days to the dentist's office <br />
-  					• Fit over dentist glasses, loupes, lights and masks <br />
-  					• 11x17 size plastic cover covered the full face, up to the ears <br />
-  					• Cushion lining between forehead and mask allowed for a comfortable, relaxed fit <br />
-  					• Ability to adjust length of elastic strap by untying the knot, or simply replacing the strap for a larger size <br />
-  					<i>&nbsp;&nbsp;&nbsp;* Future designs could adjust strap length by using fabric with a hat buckle instead of elastic</i> <br />
-  					• Mini-shield on top protected from overhead splatter <br />
-  					• Shields can be disinfected, washed and reused, thus reducing waste <br />
-  					• All parts of the face shield can be replaced so the dentist can discard the plastic, strap or padding if needed <br />
-          	• This face shield is perfect for: Dentists, Dental Assistants, Dental Hygienists and Lab Techs <br />
-
-          	<div class='row'>
-                <div class='col-xs-6 col-sm-6 col-md-3'>
-                  <img src="img/dentist_front.jpg" class="img-rounded" alt="Front" style="width:100%;">
-                  Front View
-                </div>
-                <div class='col-xs-6 col-sm-6 col-md-3'>
-                  <img src="img/dentist_back.jpg" class="img-rounded" alt="Back" style="width:100%;">
-                  Back View
-                </div>
-                <div class='col-xs-6 col-sm-6 col-md-3'>
-                  <img src="img/dentist1.jpg" class="img-rounded" alt="Dentist1" style="width:100%;">
-                  Dentist 1
-                </div>
-                <div class='col-xs-6 col-sm-6 col-md-3'>
-                  <img src="img/dentist2.jpg" class="img-rounded" alt="Dentist2" style="width:100%;">
-                  Dentist 2
-                </div>
-            </div>
-          </p>
-
           <h2>Helping Students Return to School <i class="fas fa-chalkboard-teacher"></i></h2>
+          <h4>May 2020 - Apr 2021</h4>
           <p>
             As local and federal governments started looking for ways to reopen schools, it was clear that much more needed to be done to assure parents that their kids will be safe when they return to school. Over the summer, the NYC Department of Education held <a href="https://www.schools.nyc.gov/school-year-20-21/district-school-reopening-plan-submission-to-nysed/facilities-plan" target="_blank"><u>several engagement sessions</u></a> with families to learn their concerns and provide updates on the steps the city has been taking to mainatin a healthy learning environment.
             <h3>As an MEP Design Consultant, it was obvious to me that a properly maintained and operated heating, ventilation and air-conditioning (HVAC) system can reduce the spread of viruses. Alongside proper handwashing and social distancing, air filtration, humidity levels, percentage of outside air and air distribution are all key to improving productivity and health in indoor spaces.</h3>
@@ -313,37 +384,20 @@
             IS 49 (R049) | Staten Island, NY (748 students and 141 staff)
           </p>
 
-
-          <h2>Watch my video contribution to Columbia University's Keep Our Community Healthy campaign on <a href='https://www.youtube.com/nihargarg' target="_blank">YouTube <i class="fab fa-youtube"></i></a></h2>
-            <p>
-              <div class='row'>
-                <div class='col-xs-12 col-sm-6 col-md-6'>
-                    <img src="img/ColumbiaCompact.JPG" class="img-rounded" alt="https://www.universitylife.columbia.edu/student-voices" style="width:100%;">
-                  </div>
-                  <div class='col-xs-12 col-sm-6 col-md-6'>
-                    <iframe width="100%" height="440" src="https://www.youtube-nocookie.com/embed/2pdJLL7chSI" frameborder="0" allowfullscreen></iframe>
-                  </div>
-              </div>
-            </p>
-        </div>
-
-      <button class="collapsible">Architecture & Engineering</button>
-        <div class="content">
           <h2>Pool Restoration <i class="fas fa-swimmer"></i></h2>
           <h4>Princeton Engineering Services</h4>
-          <h4>May 2019-Present</h4>
+          <h4>May 2019 - June 2020</h4>
           <p>
             Provided engineering design services to the NYC School Construction Authority (SCA) for the M440 interior restoration and reconstruction of the existing defective pool foundation walls at the sub-cellar and cellar levels along with interior renovations of the adjacent pool areas, bathrooms and natatorium at the cellar level. In addition, a new elevator will be provided at the first-floor level down to the pool area for accessibility compliance. <br />
             Located in Manhattan, M440 (also known as James Baldwin School / Bayard Rustin Educational Complex) was constructed circa 1930’s. The building is located at 351 W 18th Street, and contains an approximate student population of 2,130 students, serving 09 through 12 grades. <br />
             The overall project objective is to address the conditions of the existing reinforced pool plunge structure measuring 75 feet x 28 feet (96,200 gallon capacity) located at the sub-cellar level, including active water leakage through the plunge walls, and multiple cracks at the enameled brick of the pool-side finished surface, and provide accessibility for all new spaces, including the renovated Natatorium, adjacent toilets, showers, lockers, and offices. Also, provied new water filtration, dehumidification, ventilation and steam condensate systems for the natatorium. <br />
             I designed ductwork and sized new De-humidification unit and Air-Handling units to serve the natatorium and locker rooms based on design criteria per IMC, NYC MC. Designed and performed calculations for new pool water filtration system, hot water boiler and new plumbing fixtures for locker room and toilets. Led a team of engineers, architects, and draftsmen as prime engineer on this project. <br />
             The project's construction cost was $12,027,000.
-            <br /> <a href="***"_blank>  Photo Gallery </a>
           </p>
 
           <h2>Special Education Classroom <i class="fas fa-chalkboard-teacher"></i></h2>
           <h4>Princeton Engineering Services</h4>
-          <h4>Jan 2019-Sep 2019</h4>
+          <h4>Jan 2019 - Sep 2019</h4>
           <p>
             Provided engineering design services for the NYCSCA to convert an existing first floor classroom (Room 136) into a new Home Economics / Activities of Daily Living Room (ADL).  <br />
             Located in Brooklyn, K753 (also known as Aveyron Academy) has over 65 students who have been determined to be at-risk in their daily living skills for numerous reasons including autism, emotional disturbance, seizure disorders, cognitive delays or other economic or language-based difficulties. <br />
@@ -353,28 +407,42 @@
             Addressing the real-world needs of students who have been determined to be at-risk in their daily living skills for numerous reasons including autism, emotional disturbance, seizure disorders, cognitive delays or other economic or language-based difficulties, my team at Princeton Engineering Services and the NYC School Construction Authority (SCA) developed a new typology of educational space, the Home Economics/Activities of Daily Living Room (ADL). <br />
             This new typology is geared to not only allow students with disabilities to overcome various difficulties in order to succeed in school, but also help them to develop the necessary skills that will prepare them for post-secondary independence. Our design solution provides students with multi-sensory experiences that will provide practical experience for navigating and living in the community. <br />
             The project's construction cost was $490,000.
-            <br /> <a href="***"_blank>  Photo Gallery </a>
+          </p>
+          <p>
+            <div class='row'>
+              <div class='col-xs-6'>
+                <img src="img/pes_render1.PNG" class="img-rounded" style="width:100%;">
+              </div>
+              <div class='col-xs-6'>
+                <img src="img/pes_render2.PNG" class="img-rounded" style="width:100%;">
+              </div>
+            </div>
           </p>
 
           <h2>Technology Lab <i class="fas fa-chalkboard-teacher"></i></h2>
           <h4>Princeton Engineering Services</h4>
-          <h4>Jan 2019-Sep 2019</h4>
+          <h4>Jan 2019 - Sep 2019</h4>
           <p>
             Provided engineering design services for the NYCSCA to convert an existing third floor classroom (Room 343) into a new technology lab. <br />
             Located in the Bronx, X593 currently shares the building (X145) with other schools and has a bilingual school population of 47 students. <br />
             The overall project objective was for SYSTRA to transform the existing classroom (Room 343) into a technology lab that would enable the school to use the space as a high-end technology lab and provide flexibility to transform the space into a regular bilingual classroom to accommodate up to 28 students. The new technology lab included a new smart board, wireless mac laptops and associated work stations. <br />
             Students in this innovative classroom environment are now able to receive personal attention from teachers. Our layout was designed to support a friendly and comfortable setting based on the students’ specific bilingual needs. <br />
             The project's construction cost was $475,000.
-            <br /> <a href="***"_blank>  Photo Gallery </a>
           </p>
         </div>
 
 
       </div>
     </article>
+    </main>
 
     <!-- Collapsible JavaScript -->
     <script src="../assets/js/collapsible.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script src="../assets/js/smooth-scroll.js"></script>
   
   </body>
 </html>

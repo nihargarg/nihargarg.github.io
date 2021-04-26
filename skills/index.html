@@ -14,59 +14,213 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
     <link href='../assets/css/blog.css' rel='stylesheet'>
+    <link href='../assets/css/collapsible.css' rel='stylesheet'>
+    <link href='../assets/css/flipbox.css' rel='stylesheet'>
   </head>
   <body>
-    <nav class='blog-nav'>
-      <a href='../'> <i class="fas fa-chevron-right"></i> Nihar Garg</a>
-    </nav>
+    <header>
+      <nav class='blog-nav navbar-default'>
+          <div class='container-fluid'>
+              <div class='navbar-header'>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#covidNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href='../'><i class="fas fa-chevron-right"></i> Nihar Garg</a>
+              </div>
+              <div class='collapse navbar-collapse' id="covidNavbar">
+                  <ul class='nav navbar-nav navbar-right'>
+                      <li><a href='#skills-section'>Skills</a></li>
+                      <li><a href='#awards-section'>Awards</a></li>
+                      <li><a href='#recommendations-section'>Recommendations</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
 
+    <main>
     <article class='blog-post'>
       <h1 class='blog-title'>Skills, Awards and Recommendations <i class="fas fa-trophy"></i> </h1></a>
 
       <div class='blog-body' align="left">
-        <!--<p>
-          Skills are listed below:
-        </p>
+        
+      <section id='skills-section'>
+		<p>A roboticist is one who applies knowledge of interdisciplinary fields of engineering to conceptualize, design, build, program, and experiment with robots.</p>
 
-        <p>
-          • Skills
-        </p>-->
+		<div class="row">
+		  <div class="column">
+		    <div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			    	<p><i class="fa fa-charging-station"></i></p>
+	      			<h3>Electronics</h3>
+			    </div>
+			    <div class="flip-card-back">
+			    	<p>Circuits, controllers, sensors and actuators</p>
+			    </div>
+			  </div>
+		    </div>
+		  </div>
 
-		<p>
-        <h2>Princeton Engineering Services </h2>
-        	<p>
-		  <img src="img/arjun.PNG" alt="Princeton Engineering Services" style="width:50%;">
-	        </p>
-		<p>
-		  <img src="img/isabel.PNG" alt="Princeton Engineering Services" style="width:50%;">
-		</p>
-		<p>
-		 <img src="img/jay.PNG" alt="Princeton Engineering Services" style="width:50%;">
-		</p>
-		</p>
+		  <div class="column">
+		  	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			    	<p><i class="fa fa-cogs"></i></p>
+	      			<h3>Mechanics</h3>
+			    </div>
+			    <div class="flip-card-back">
+			    	<p>Design, manufacture, prototype and test</p>
+			    </div>
+			  </div>
+		    </div>
+		  </div>
+		  
+		  <div class="column">
+		  	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			    	<p><i class="fa fa-code-branch"></i></p>
+		      		<h3>Software</h3>
+			    </div>
+			    <div class="flip-card-back">
+			    	<p>Algorithms for Artificial Intelligence and Machine Learning</p>
+			    </div>
+			  </div>
+		    </div>
+		  </div>
+		  
+		  <div class="column">
+		  	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			    	<p><i class="fa fa-undo"></i></p>
+		      		<h3>Control Systems</h3>
+			    </div>
+			    <div class="flip-card-back">
+			    	<p>Closed-loop</p>
+			    </div>
+			  </div>
+		    </div>
+		  </div>
+		</div><br />
 
-		<h2>Charles River Development </h2>
-		<p>
-		  <img src="img/peter.PNG" alt="Charles River Development" style="width:50%;">
-		</p>
-		<p>
-		  <img src="img/uthara.PNG" alt="Charles River Development" style="width:50%;">
-		</p>
-		<p>
-		  <img src="img/paul.PNG" alt="Charles River Development" style="width:50%;">
-		</p>
-		<p>
-		  <img src="img/raj.PNG" alt="Charles River Development" style="width:50%;">
-		</p>
-		</p>
+		<div class="row">
+		  <div class="column">
+		  	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			    	<p><i class="fa fa-square-root-alt"></i></p>
+		      		<h3>Computational Thinking</h3>
+			    </div>
+			    <div class="flip-card-back">
+			    	<p>Higher‐order problem‐solving</p>
+			    </div>
+			  </div>
+		    </div>
+		  </div>
 
-		<h2>Kaiser Aluminum </h2>
-		<p>
-		  <img src="img/matt.PNG" alt="Kaiser Aluminum" style="width:50%;">
-		</p>
-		</p>
+		  <div class="column">
+		  	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			    	<p><i class="fa fa-tablet-alt"></i></p>
+		      		<h3>Internet of Things</h3>
+			    </div>
+			    <div class="flip-card-back">
+			    	<p>Connect devices to a network and to each other</p>
+			    </div>
+			  </div>
+		    </div>
+		  </div>
+
+		  <div class="column">
+		  	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			    	<p><i class="fa fa-database"></i></p>
+		      		<h3>Data Science</h3>
+			    </div>
+			    <div class="flip-card-back">
+			    	<p>Extract insights from structured and unstructured data</p>
+			    </div>
+			  </div>
+		    </div>
+		  </div>
+		  
+		  <div class="column">
+		  	<div class="flip-card">
+			  <div class="flip-card-inner">
+			    <div class="flip-card-front">
+			    	<p><i class="fa fa-globe-americas"></i></p>
+		      		<h3>Optimization & Simulation</h3>
+			    </div>
+			    <div class="flip-card-back">
+			    	<p>Building environments to test robots</p>
+			    </div>
+			  </div>
+		    </div>
+		  </div>
+		</div><br />
+      </section>
+
+      <section id='awards-section'>
+
+
+      </section>
+
+      <section id='recommendations-section'>
+		<button class="collapsible">Recommendations  <i class="far fa-smile"></i></button>
+        	<div class="content">
+				<p>
+		        <h2>Princeton Engineering Services </h2>
+		        <p>
+				  <img src="img/arjun.PNG" alt="Princeton Engineering Services" style="width:75%; display: block; margin: 0 auto;">
+			    </p>
+				<p>
+				  <img src="img/isabel.PNG" alt="Princeton Engineering Services" style="width:75%; display: block; margin: 0 auto;">
+				</p>
+				<p>
+				 <img src="img/jay.PNG" alt="Princeton Engineering Services" style="width:75%; display: block; margin: 0 auto;">
+				</p>
+				</p>
+
+				<h2>Charles River Development </h2>
+				<p>
+				  <img src="img/peter.PNG" alt="Charles River Development" style="width:75%; display: block; margin: 0 auto;">
+				</p>
+				<p>
+				  <img src="img/uthara.PNG" alt="Charles River Development" style="width:75%; display: block; margin: 0 auto;">
+				</p>
+				<p>
+				  <img src="img/paul.PNG" alt="Charles River Development" style="width:75%; display: block; margin: 0 auto;">
+				</p>
+				<p>
+				  <img src="img/raj.PNG" alt="Charles River Development" style="width:75%; display: block; margin: 0 auto;">
+				</p>
+				</p>
+
+				<h2>Kaiser Aluminum </h2>
+				<p>
+				  <img src="img/matt.PNG" alt="Kaiser Aluminum" style="width:75%; display: block; margin: 0 auto;">
+				</p>
+				</p>
+			</div>
+	  </section>
 
       </div>
     </article>
+	</main>
+
+    <!-- Collapsible JavaScript -->
+    <script src="../assets/js/collapsible.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script src="../assets/js/smooth-scroll.js"></script>
+
   </body>
 </html>

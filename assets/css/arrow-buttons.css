@@ -48,7 +48,7 @@
 .btn-outline.active,
 .btn-outline:active,
 .btn-outline:hover {
-    color: #000;
+    color: #444;
     font-size: 22px;
     background: #fff;
     border: 2px solid #fff

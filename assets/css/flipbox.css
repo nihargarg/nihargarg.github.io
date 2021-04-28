@@ -54,8 +54,6 @@
   transform: rotateY(180deg);
 }
 
-/* Responsive columns */
-
 @media screen and (max-width: 1050px) {
   .column {
     width: 50%;
@@ -65,3 +63,70 @@
 }
 
 .fa {font-size:50px;}
+
+
+/* AWARDS SECTION */
+.text {
+  background-color: white;
+  color: black;
+  font-size: 4vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 85%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+.text-top {
+  top: 20%;
+  width: 85%;
+}
+
+.text-bottom {
+  top: 70%;
+  width: 75%;
+}
+
+@media screen and (max-width: 992px) {
+  .text {
+    font-size: 6vw; 
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    width: 60%;
+  }
+}
+
+
+/* RECOMMENDATION SECTION */
+.rec-card {
+  width: 65%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .rec-card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .rec-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .rec-card {
+    width: 100%;
+  }
+}
